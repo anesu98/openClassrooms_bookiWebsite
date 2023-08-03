@@ -4,13 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bookie - Find a place for your dream vacation</title>
-        <link rel="stylesheet" href="normalise.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./css/normalise.css">
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
         <div class="mainContentContainer">
             <header id="header">
+                <nav id="navBar">
+                    <div id="bookieLogo" class="image">
+                        <img src="./images/logo/Booki.png" alt="Bookie logo in original blue">
+                    </div>
 
+                    <ul class="navLinks">
+                        <li><a href="#">Accomodations</a></li>
+                        <li><a href="#">Activities</a></li>
+                    </ul>
+                </nav>
+
+                <form action="#" method="get">
+                    <legend>
+                        Find a place for your dream vacation
+                    </legend>
+                    <fieldset>Downtown or in nature</fieldset>
+                    <div class="locationSearchBar" id="locationSearchBar">
+                        <input type="text">
+                        <button>Search</button>
+                    </div>
+                </form>
             </header>
 
             <main id="main">
