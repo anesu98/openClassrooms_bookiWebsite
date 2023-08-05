@@ -26,8 +26,9 @@ body {
     border-style: solid;
     border-color: red;
     border-width: 1px;
-    height: 1000px;
-    width: 1308px;
+
+    height: 1308px;
+    width: 1000px;
 }
 
 
@@ -38,7 +39,7 @@ body {
 
     display: flex;
     justify-content: space-between;
-    height: 6.104033970276008%;
+    height: 75px;
 }
 
 #navBar ul {
@@ -80,4 +81,22 @@ body {
     text-decoration: none;
     text-align: center;
     font-size: 13px;
+}
+
+#bookieLogo {
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37px;
+}
+
+#bookieLogo img {
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+
+    height: 35px;
 }
