@@ -110,6 +110,7 @@ body {
     border-style: solid;
     border-color: green;
     border-width: 1px;
+    margin-left: 38px;
 
     height: 107px;
     display: flex;
@@ -122,7 +123,10 @@ body {
     border-color: blue;
     border-width: 1px;
 
-    
+    height: 17px;
+    width: 275px;
+    font-size: 15.65px;
+    font-weight: 700;
 }
 
 #locationSearch fieldset {
@@ -133,6 +137,8 @@ body {
     margin: 0;
     padding: 0;
     width: fit-content; 
+    height: 10px;
+    font-size: 12.5px;
 }
 
 #locationSearch {
