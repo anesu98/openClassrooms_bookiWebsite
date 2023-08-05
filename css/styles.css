@@ -10,6 +10,7 @@
     --blue: #0065FC;
     --lighterBlue: #DEEBFF;
     --backgroundGrey: #F2F2F2;
+    --searchbarOutline: black;
 }
 
 /* global scope styles */
@@ -111,6 +112,9 @@ body {
     border-width: 1px;
 
     height: 107px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #locationSearch legend {
@@ -145,4 +149,58 @@ body {
     border-width: 1px;
 
     display: flex;
+    height: auto;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationSearchBar .locationIconContainer {
+    border-style: solid;
+    border-color: var(--searchbarOutline);
+    border-width: 1px;
+    border-radius: 12px 0 0 12px;
+    background-color: var(--backgroundGrey);
+
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locationSearchBar .searchInputContainer {
+    border-style: solid;
+    border-color: var(--searchbarOutline);
+    border: 1px 0px 1px 0;
+
+    height: 36px;
+    width: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInputContainer input {
+    border-style: none;
+    border-color: transparent;
+    border-width: 0px;
+    outline: none;
+
+    width: 153px;
+    height: 28px;
+}
+
+.locationSearchBar .searchSubmit {
+    border-style: solid;
+    border-color: var(--searchbarOutline);
+    border-width: 1px;
+    border-radius: 0 12px 12px 0;
+    background-color: var(--blue);
+
+    height: 37px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
