@@ -18,7 +18,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/* Header */
+/* Header scope code */
 
 
 .mainContentContainer {
@@ -31,6 +31,7 @@ body {
     width: 1000px;
 }
 
+/* Navbar */
 
 #navBar {
     border-style: solid;
@@ -99,4 +100,49 @@ body {
     border-width: 1px;
 
     height: 35px;
+}
+
+
+/* Search form */
+
+#locationSearch {
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+
+    height: 107px;
+}
+
+#locationSearch legend {
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+
+    
+}
+
+#locationSearch fieldset {
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+
+    margin: 0;
+    padding: 0;
+    width: fit-content; 
+}
+
+#locationSearch {
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+
+    
+}
+
+#locationSearch .locationSearchBar {
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+
+    display: flex;
 }
