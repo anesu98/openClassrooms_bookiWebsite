@@ -29,9 +29,11 @@ body {
 
 .mainContentContainer {
     margin: 0;
+    /*
     border-style: solid;
     border-color: red;
     border-width: 1px;
+    */
 
     height: 1308px;
     width: 924px;
@@ -40,20 +42,12 @@ body {
 /* Navbar */
 
 #navBar {
-    border-style: solid;
-    border-color: green;
-    border-width: 1px;
-
     display: flex;
     justify-content: space-between;
     height: 75px;
 }
 
 #navBar ul {
-    border-style: solid;
-    border-color: blue;
-    border-width: 1px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,11 +58,6 @@ body {
 }
 
 #navBar ul li {
-    border-style: solid;
-    border-color: turquoise;
-    border-width: 1px;
-
-    
     width: 112px;
     height: 74px;
     display: flex;
@@ -79,23 +68,27 @@ body {
 }
 
 #navBar ul li a {
-    border-style: solid;
-    border-color: pink;
-    border-width: 1px;
-
-    height: 9px;
-    width: 90px;
+    height: 96%;
+    width: 100%;
     text-decoration: none;
     text-align: center;
     font-size: 11.25px;
     font-weight: 400;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar ul li a:hover {
+    color: var(--blue);
+    border-style: solid;
+    border-width: 1px 0 0 0;
 }
 
 /* navbar Logo */
 
 #bookieLogo {
-    border-style: solid;
-    border-color: blue;
     border-width: 1px;
     display: flex;
     justify-content: center;
@@ -103,10 +96,6 @@ body {
 }
 
 #bookieLogo img {
-    border-style: solid;
-    border-color: green;
-    border-width: 1px;
-
     height: 35px;
 }
 
@@ -114,21 +103,13 @@ body {
 /* Search form */
 
 #locationSearch {
-    border-style: solid;
-    border-color: green;
-    border-width: 1px;
-
     height: 107px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-#locationSearch legend {
-    border-style: solid;
-    border-color: blue;
-    border-width: 1px;
-
+#locationSearch h1 {
     height: 17px;
     width: 275px;
     font-size: 15.65px;
@@ -136,57 +117,66 @@ body {
 }
 
 #locationSearch fieldset {
-    border-style: solid;
-    border-color: blue;
-    border-width: 1px;
-
     margin: 0;
     padding: 0;
     width: fit-content; 
     height: 10px;
     font-size: 12.5px;
+    border-style: none;
 }
 
+/*
 #locationSearch {
+    
     border-style: solid;
     border-color: blue;
     border-width: 1px;
-
     
 }
 
-#locationSearch .locationSearchBar {
-    border-style: solid;
-    border-color: blue;
-    border-width: 1px;
+*/
 
+#locationSearch .locationSearchBar {
     display: flex;
     height: auto;
     width: fit-content;
     justify-content: center;
     align-items: center;
+    /*
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 12px 12px 12px 12px;
+    */
 }
 
 .locationSearchBar .locationIconContainer {
     border-style: solid;
     border-color: var(--searchbarOutline);
     border-width: 1px;
-    border-radius: 12px 0 0 12px;
+    
     background-color: var(--backgroundGrey);
-
-    height: 36px;
+    border-radius: 12px 0 0 12px;
+    height: 35px;
     width: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.locationIconContainer i {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .locationSearchBar .searchInputContainer {
     border-style: solid;
     border-color: var(--searchbarOutline);
-    border: 1px 0px 1px 0;
+    border-width: 1px;
 
-    height: 36px;
+    height: 35px;
     width: 163px;
     display: flex;
     align-items: center;
@@ -195,12 +185,12 @@ body {
 
 .searchInputContainer input {
     border-style: none;
-    border-color: transparent;
-    border-width: 0px;
+    border-color: var(--searchbarOutline);
+    border-width: 1px;
     outline: none;
 
-    width: 153px;
-    height: 28px;
+    width: 80%;
+    height: 80%;
 }
 
 .locationSearchBar .searchSubmit {
@@ -210,33 +200,35 @@ body {
     border-radius: 0 12px 12px 0;
     background-color: var(--blue);
 
-    height: 37px;
+    height: 37.2px;
     width: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 12px;
+    color: white;
 }
 
 /* Filters */
 
 #searchFilter {
+/*
     border-style: solid;
     border-color: green;
     border-width: 1px;
-
+*/
     height: 65px;
     display: flex;
     justify-content: space-between;
 }
 
+/*
 #searchFilter .filterLegend {
-    /*
     border-style: solid;
     border-color: blue;
     border-width: 1px;
-    */
-
 }
+*/
 
 #searchFilter .filterLegend {
     display: flex;
