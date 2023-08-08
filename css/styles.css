@@ -10,16 +10,15 @@
     --blue: #0065FC;
     --lighterBlue: #DEEBFF;
     --backgroundGrey: #F2F2F2;
-    --searchbarOutline: black;
+    --searchbarOutline: #f2f2f2;
 }
 
 /* global scope styles */
 
 body {
     font-family: 'Raleway', sans-serif;
+    display: block;
 
-    display: flex;
-    justify-content: center;
     height: 1308px;
     width: 1000px;
 }
@@ -35,7 +34,7 @@ body {
     border-width: 1px;
     */
 
-    height: 1308px;
+    height: auto;
     width: 924px;
 }
 
