@@ -1,0 +1,80 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+
+/* Global Scope Styles
+    Includes:
+    - Page centralisation
+    - default fonts
+    - default font sizes
+*/
+
+:root {
+    /* designated colour palet for website */
+    --blue: #0065FC;
+    --lighterBlue: #DEEBFF;
+    --backgroundGrey: #F2F2F2;
+}
+
+body {
+    /* highlighting container for page placement */
+    border-color: turquoise;
+    border-style: solid;
+    border-width: 1px;
+    /* extra normalisation */
+    margin: 0;
+    /* centralising properties for body tag*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* global scope styles */
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.mainContentContainer {
+    /* Used to centralise main content whilst keeping
+    everything on edges in line. Should Always be central
+    nomatter screen size */
+
+    /* highlighting container for page placement */
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+    /* extra normalisation */
+    margin: 0;
+    /* setting the sizes for conatiner */
+    width: 92.6%; /* 926px/1000px (figma image legths) */
+}
+
+.footerContainer {
+    /* Should always be as long as page so background can
+    be greyed out. Should allow footer to be in line with
+    .mainContContainer */
+
+    /* highlighting element for page placement */
+    border-color: turquoise;
+    border-style: solid;
+    border-width: 1px;
+    /* setting the sizes for conatiner */
+    width: 100%;
+    /* centralising properties for container*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    /* Should be in line with .mainContContainer */
+
+    /* highlighting element for page placement */
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+    /* setting the sizes for conatiner */
+    width: 92.6%; /* 926px/1000px (figma image legths) */
+}
+

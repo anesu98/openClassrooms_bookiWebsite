@@ -5,16 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bookie - Find a place for your dream vacation</title>
         <link rel="stylesheet" href="./css/normalise.css">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/globalStyles.css">
+        <link rel="stylesheet" href="./css/header.css">
         <script src="https://kit.fontawesome.com/b82e5c8e86.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="mainContentContainer">
             <header>
                 <nav id="navBar">
-                    <div id="bookieLogo" class="image">
+                    <a href="#" id="bookieLogo" class="image">
                         <img src="./images/logo/Booki.png" alt="Bookie logo in original blue">
-                    </div>
+                    </a>
 
                     <ul class="navLinks">
                         <li><a href="#">Accomodations</a></li>
@@ -23,9 +24,9 @@
                 </nav>
 
                 <form action="#" method="get" id="locationSearch">
-                    <h1>
+                    <p>
                         Find a place for your dream vacation
-                    </h1>
+                    </p>
                     <fieldset>Downtown or in nature</fieldset>
 
                     <div class="locationSearchBar" id="locationSearchBar">
@@ -38,9 +39,6 @@
                         <button class="searchSubmit">Search</button>
                     </div>
                 </form>
-            </header>
-
-            <main id="main">
 
                 <div id="searchFilter">
                     <div class="filterLegend">
@@ -48,36 +46,36 @@
                     </div>
                     <div class="filterOptionContainer">
                         <div class="filterOption">
-                            <div class="filterIcon">
+                            <button class="filterIcon">
                                 <i class="fa-solid fa-money-bill-wave"></i>
-                            </div>
+                            </button>
                             <div class="filterName">
                                 <p>Low Cost</p>
                             </div>
                         </div>
 
                         <div class="filterOption">
-                            <div class="filterIcon">
+                            <button class="filterIcon">
                                 <i class="fa-sharp fa-solid fa-child-reaching"></i>
-                            </div>
+                            </button>
                             <div class="filterName">
                                 <p>Family-friendly</p>
                             </div>
                         </div>
                         
                         <div class="filterOption">
-                            <div class="filterIcon">
+                            <button class="filterIcon">
                                 <i class="fa-solid fa-heart"></i>
-                            </div>
+                            </button>
                             <div class="filterName">
                                 <p>Romantic</p>
                             </div>
                         </div>
 
                         <div class="filterOption">
-                            <div class="filterIcon">
+                            <button class="filterIcon">
                                 <i class="fa-solid fa-dog"></i>
-                            </div>
+                            </button>
                             <div class="filterName">
                                 <p>Pets allowed</p>
                             </div>
@@ -88,12 +86,14 @@
                 <div id="searchResultQuant" class="info">
                     <p>More than 500 accomodations are available in this city</p>
                 </div>
+            </header>
 
-                <section id="accomodationResults">
+            <div class="mainContentContainer" id="mainContent">
+                <main id="accomodationResults">
                     <div class="accomTitleContainer">
-                        <h2>Accomodations in Marseille</h2>
+                        <h1>Accomodations in Marseille</h1>
                     </div>
-
+    
                     <article id="accomodationsArticle1" class="accomodations">
                         <img src="#" alt="Bedroom shot of Auberge la Cannebiere. This picture highlights a well maintaned shared room that features 3 bunk beds and boasts a scenic view of the town">
                         <h3 class="accomodationName">Auberge la Cannebiere</h3>
@@ -106,7 +106,7 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </article>
-
+    
                     <article id="accomodationsArticle2" class="accomodations">
                         <img src="#" alt="">
                         <h3 class="accomodationName">Hotel du port</h3>
@@ -119,7 +119,7 @@
                             <span class="fa fa-star checked"></span>
                         </div>
                     </article>
-
+    
                     <article id="accomodationsArticle3" class="accomodations">
                         <img src="#" alt="">
                         <h3 class="accomodationName">Les mouettes Hotel</h3>
@@ -132,7 +132,7 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </article>
-
+    
                     <article id="accomodationsArticle4" class="accomodations">
                         <img src="#" alt="">
                         <h3 class="accomodationName">Hotel de la mer</h3>
@@ -145,7 +145,7 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </article>
-
+    
                     <article id="accomodationsArticle5" class="accomodations">
                         <img src="#" alt="">
                         <h3 class="accomodationName">Auberge Le Panier</h3>
@@ -158,7 +158,7 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </article>
-
+    
                     <article id="accomodationsArticle6" class="accomodations">
                         <img src="#" alt="">
                         <h3 class="accomodationName">Hotel chez Amina</h3>
@@ -171,9 +171,9 @@
                             <span class="fa fa-star checked"></span>
                         </div>
                     </article>
-                </section>
-
-                <section id="mostPopularResults">
+                </main>
+    
+                <aside id="mostPopularResults">
                     <div class="mostPopularTitleContainer">
                         <h2>Most Popular</h2>
                         <i class="fa-solid fa-star"></i>
@@ -190,7 +190,7 @@
                             <span class="fa fa-star checked"></span>
                         </div>
                     </article>
-
+    
                     <article id="article2" class="mostPopular">
                         <img src="#" alt="">
                         <h3 class="accomodationName">Au coeur de l'eau Bed and Breakfast</h3>
@@ -215,8 +215,9 @@
                             <span class="fa fa-star"></span>
                         </div>
                     </article>
-                </section>
-
+                </aside>
+    
+    
                 <section id="activitiesResults">
                     <h2>Activities in Marseille</h2>
                     <div class="activitiesContainer">
@@ -224,61 +225,58 @@
                             <img src="#" alt="">
                             <h3>Old Port</h3>
                         </article>
-
+    
                         <article id="activityArticle2" class="activities">
                             <img src="#" alt="">
                             <h3>Pomegues Fort</h3>
                         </article>
-
+    
                         <article id="activityArticle3" class="activities">
                             <img src="#" alt="">
                             <h3>Frioul Island</h3>
                         </article>
-
+    
                         <article id="activityArticle4" class="activities">
                             <img src="#" alt="">
                             <h3>Calanques National Park</h3>
                         </article>
-
+    
                         <article id="activityArticle5" class="activities">
                             <img src="#" alt="">
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </article>
-
+    
                         <article id="activityArticle6" class="activities">
                             <img src="#" alt="">
                             <h3>Longchamp Park</h3>
                         </article>
                     </div>
                 </section>
-            </main>
+            </div>
         </div>
-
         <div class="footerContainer">
-            <footer id="footer">
-                <div class="container">
-                    <div class="footerLinksContainer about">
-                        <h2>About</h2>
-                        <ul>
-                            <li>Site Map</li>
-                            <li>General Terms and Conditions</li>
-                            <li><a href="">Data and Privacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerLinksContainer accoms">
-                        <h2>Our accommodations</h2>
-                        <ul>
-                            <li><a href="">Quality Assessment</a></li>
-                            <li><a href="">You have a hotel?</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerLinksContainer assistance">
-                        <h2>Assistance</h2>
-                        <ul>
-                            <li><a href="">Help Desk</a></li>
-                            <li><a href="">Contact Us</a></li>
-                        </ul>
-                    </div>
+            <footer>
+                <div class="footerLinksContainer about">
+                    <h2>About</h2>
+                    <ul>
+                        <li>Site Map</li>
+                        <li>General Terms and Conditions</li>
+                        <li><a href="">Data and Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footerLinksContainer accoms">
+                    <h2>Our accommodations</h2>
+                    <ul>
+                        <li><a href="">Quality Assessment</a></li>
+                        <li><a href="">You have a hotel?</a></li>
+                    </ul>
+                </div>
+                <div class="footerLinksContainer assistance">
+                    <h2>Assistance</h2>
+                    <ul>
+                        <li><a href="">Help Desk</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
                 </div>
             </footer>
         </div>
