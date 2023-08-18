@@ -16,7 +16,7 @@
 /* global scope styles */
 
 body {
-    font-family: 'Raleway', sans-serif;
+    
     display: block;
 
     height: 1308px;
@@ -258,7 +258,7 @@ body {
 
 .filterOptionContainer .filterOption {
     border-style: solid;
-    border-color: var(--blue);
+    border-color: grey;
     border-width: 1px;
     border-radius: 27px;
 
@@ -271,7 +271,7 @@ body {
 
 .filterOption .filterIcon {
     border-style: solid;
-    border-color: var(--blue);
+    border-color: var(--searchbarOutline);
     border-width: 1px;
     border-radius: 50px;
 
