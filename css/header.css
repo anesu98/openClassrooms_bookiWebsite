@@ -289,7 +289,8 @@
 /* redo your button by just enclosing an icon and text within
 a button */
 
-    .filterOption .filterIcon {
+/*
+.filterOption .filterIcon {
         border-style: solid;
         border-color: var(--searchbarOutline);
         border-width: 1px;
@@ -326,3 +327,55 @@ a button */
         font-size: 10.7px;
         font-weight: 600;
     }
+
+*/
+
+.filterButton {
+    /* container for new options*/
+    /* filter border + style */
+    border-style: solid;
+    border-width: 1px;
+    /* filter container shape */
+    border-color: var(--backgroundGrey);
+    border-radius: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /* properties to allow different filter legnths */
+    height: 34px;
+    width: fit-content;
+    align-items: center;
+    /* space between words and edge */
+    padding: 0 13px 0 0;
+    /* font size + colour*/
+    font-size: 10.7px;
+    font-weight: 600;
+    background-color: white;
+}
+
+.filterIcon {
+    border-color: var(--backgroundGrey);
+    border-style: solid;
+    border-width: 1px;
+    /* centralising the icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* icon shape */
+    height: 33px;
+    width: 33px;
+    border-radius: 26px;
+    /* space between icon and text */
+    margin: 0 10px 0 0;
+    /* icon size + colour */
+    font-size: 13px;
+    color: var(--blue);
+    background-color: var(--lighterBlue);
+}
+
+.filterButton:hover {
+    /* not specified in brief, so just a reminder for 
+    demonstration */
+    background-color: var(--backgroundGrey);
+}
