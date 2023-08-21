@@ -7,12 +7,15 @@
         <link rel="stylesheet" href="./css/normalise.css">
         <link rel="stylesheet" href="./css/globalStyles.css">
         <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/mainContentStyles.css">
         <script src="https://kit.fontawesome.com/b82e5c8e86.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="mainContentContainer">
             <header>
+                <!-- navigation, search, filters and search results -->
                 <nav id="navBar">
+                    <!-- navbar -->
                     <a href="#" id="bookieLogo" class="image">
                         <img src="./images/logo/Booki.png" alt="Bookie logo in original blue">
                     </a>
@@ -24,6 +27,7 @@
                 </nav>
 
                 <form action="#" method="get" id="locationSearch">
+                    <!-- search button -->
                     <p>
                         Find a place for your dream vacation
                     </p>
@@ -41,41 +45,53 @@
                 </form>
 
                 <div id="searchFilter">
+                    <!-- filters -->
                     <div class="filterLegend">
                         <p>Filters</p>
                     </div>
                     <div class="filterOptionContainer">
                         <button class="filterButton">
-                            <i class="fa-solid fa-money-bill-wave  filterIcon"></i>
+                            <span class="filterIcon">
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                            </span>
                             Low Cost
                         </button>
 
                        
                         <button class="filterButton">
-                            <i class="fa-sharp fa-solid fa-child-reaching filterIcon"></i>
+                            <span class="filterIcon">
+                                <i class="fa-sharp fa-solid fa-child-reaching"></i>
+                            </span>
                             Family-friendly
                         </button>                      
                         
                         <button class="filterButton">
-                            <i class="fa-solid fa-heart filterIcon"></i>
+                            <span class="filterIcon">
+                                <i class="fa-solid fa-heart"></i>
+                            </span>
                             Romantic
                         </button>
 
                         <button class="filterButton">
-                            <i class="fa-solid fa-dog filterIcon"></i>
+                            <span class="filterIcon">
+                                <i class="fa-solid fa-dog"></i>
+                            </span>
                             Pets allowed
                         </button>
                     </div>
                 </div>
 
                 <div id="searchResultQuant" class="info">
+                    <!-- search results -->
+                    <i class="fa-solid fa-info infoIcon"></i>
                     <p>More than 500 accomodations are available in this city</p>
                 </div>
             </header>
 
-            <div class="mainContentContainer" id="mainContent">
+            <div class="mainArticleContainer" id="mainContent">
+                <!-- accomodation options -->
                 <main id="accomodationResults">
-                    <div class="accomTitleContainer">
+                    <div class="accomLegendContainer">
                         <h1>Accomodations in Marseille</h1>
                     </div>
     

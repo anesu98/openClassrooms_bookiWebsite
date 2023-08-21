@@ -318,8 +318,8 @@
     justify-content: center;
     align-items: center;
     /* icon shape */
-    height: 33px;
-    width: 33px;
+    height: 35px;
+    width: 35px;
     border-radius: 26px;
     /* space between icon and text */
     margin: 0 10px 0 0;
@@ -327,6 +327,8 @@
     font-size: 13px;
     color: var(--blue);
     background-color: var(--lighterBlue);
+
+    /* why is the icon jumping out of place when page is refreshed? */
 }
 
 .filterButton:hover {
@@ -334,3 +336,45 @@
     demonstration */
     background-color: var(--backgroundGrey);
 }
+
+#searchResultQuant {
+    /* setting the size of the search results container */
+    /* container sizes */
+    height: 50px;
+    /* flex options for container */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+#searchResultQuant .infoIcon {
+    /* setting the size of the info bar */
+    /* highlighting container for page placement */
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 90px;
+    /* size of the icon */
+    height: 17px;
+    width: 17px;
+    /* flex options for container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* icon size */
+    font-size: 10px;
+    color: var(--blue);
+}
+
+#searchResultQuant p {
+    /* setting the size of the info bar */
+    /* size of the icon */
+    height: 35px;
+    width: 274px;
+    /* font for search results */
+    font-size: 11px;
+}
+
+
