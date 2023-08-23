@@ -14,7 +14,9 @@
     --blue: #0065FC;
     --lighterBlue: #DEEBFF;
     --backgroundGrey: #F2F2F2;
+    --defaultStar: darkgray;
     --searchbarOutline: #f2f2f2;
+    --backgroundWhite: white;
 }
 
 /************ navigation bar ***************/
