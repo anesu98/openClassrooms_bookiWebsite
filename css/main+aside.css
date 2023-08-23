@@ -21,10 +21,6 @@
 
 
 .mainArticleContainer {
-    /* setting the size of the main container */
-    border-color: blue;
-    border-style: solid;
-    border-width: 1px;
     /* setting the flex properties */
     display: flex;
     flex-direction: column;

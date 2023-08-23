@@ -21,10 +21,6 @@
 
 
 body {
-    /* highlighting container for page placement */
-    border-color: turquoise;
-    border-style: solid;
-    border-width: 1px;
     /* extra normalisation */
     margin: 0;
     /* centralising properties for body tag*/
@@ -42,10 +38,6 @@ body {
     everything on edges in line. Should Always be central
     nomatter screen size */
 
-    /* highlighting container for page placement */
-    border-color: red;
-    border-style: solid;
-    border-width: 1px;
     /* extra normalisation */
     margin: 0;
     /* setting the sizes for conatiner */
@@ -57,10 +49,6 @@ body {
     be greyed out. Should allow footer to be in line with
     .mainContContainer */
 
-    /* highlighting element for page placement */
-    border-color: turquoise;
-    border-style: solid;
-    border-width: 1px;
     /* setting the sizes for conatiner */
     width: 100%;
     /* centralising properties for container*/
