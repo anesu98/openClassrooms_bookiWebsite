@@ -46,7 +46,7 @@ body {
     /* extra normalisation */
     margin: 0;
     /* setting the sizes for conatiner */
-    width: 92.6%; /* 926px/1000px (figma image legths) */
+    width: 926px; /* 926px/1000px = 92.2% (figma image legths) */
 }
 
 .footerContainer {
@@ -75,6 +75,6 @@ footer {
     border-style: solid;
     border-width: 1px;
     /* setting the sizes for conatiner */
-    width: 92.6%; /* 926px/1000px (figma image legths) */
+    width: 926px; /* 926px/1000px = 92.6% (figma image legths) */
 }
 

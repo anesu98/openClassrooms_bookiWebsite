@@ -7,7 +7,9 @@
         <link rel="stylesheet" href="./css/normalise.css">
         <link rel="stylesheet" href="./css/globalStyles.css">
         <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/mainContentStyles.css">
+        <link rel="stylesheet" href="./css/main+aside.css">
+        <link rel="stylesheet" href="./css/activitiesSection.css">
+        <link rel="stylesheet" href="./css/footer.css">
         <script src="https://kit.fontawesome.com/b82e5c8e86.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -90,136 +92,197 @@
 
             <div class="mainArticleContainer" id="mainContent">
                 <!-- accomodation options -->
-                <main id="accomodationResults">
-                    <div class="accomLegendContainer">
-                        <h1>Accomodations in Marseille</h1>
-                    </div>
+               <div class="accomMostPopular">
+                    <main id="accomodationResults">
+                        <div class="legendContainer">
+                            <h1>Accomodations in Marseille</h1>
+                        </div>
+                        
+                        <div class="accomArticleContainer">
+                            <!-- containing all 6 top accomodation results -->
+                            <article id="accomodationsArticle1" class="accomodations">
+                                <div class="accomPhoto">
+                                    <!-- allows me to keep full image size -->
+                                    <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" srcset="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg, ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2x, ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3x, ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 4x" alt="Bedroom shot of Auberge la Cannebiere. This picture highlights a well maintaned shared room that features 3 bunk beds and boasts a scenic view of the town">
+                                </div>
+                                <div class="articleText">
+                                    <!-- contains text content -->
+                                    <h3 class="accomodationName">Auberge la Cannebiere</h3>
+                                    <p class="accomodationPrice">Night starting at <em>25€</em></p>
+                                    <div class="ratingContainer">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </article>
+        
+                            <article id="accomodationsArticle2" class="accomodations">
+                                <div class="accomPhoto">
+                                    <!-- allows me to keep full image size -->
+                                    <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                                </div>
+                                <div class="articleText">
+                                    <!-- contains text content -->
+                                    <h3 class="accomodationName">Hotel du port</h3>
+                                    <p class="accomodationPrice">Night starting at <em>52€</em></p>
+                                    <div class="ratingContainer">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                            </article>
+        
+                            <article id="accomodationsArticle3" class="accomodations">
+                                <div class="accomPhoto">
+                                    <!-- allows me to keep full image size -->
+                                    <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                                </div>
+                                <div class="articleText">
+                                    <!-- contains text content -->
+                                    <h3 class="accomodationName">Les mouettes Hotel</h3>
+                                    <p class="accomodationPrice">Night starting at <em>76€</em></p>
+                                    <div class="ratingContainer">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </article>
+        
+                            <article id="accomodationsArticle4" class="accomodations">
+                                <div class="accomPhoto">
+                                    <!-- allows me to keep full image size -->
+                                    <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                                </div>
+                                <div class="articleText">
+                                    <!-- contains text content -->
+                                    <h3 class="accomodationName">Hotel de la mer</h3>
+                                    <p class="accomodationPrice">Night starting at <em>46€</em></p>
+                                    <div class="ratingContainer">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </article>
+        
+                            <article id="accomodationsArticle5" class="accomodations">
+                                <div class="accomPhoto">
+                                    <!-- allows me to keep full image size -->
+                                    <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                                </div>
+                                <div class="articleText">
+                                    <!-- contains text content -->
+                                    <h3 class="accomodationName">Auberge Le Panier</h3>
+                                    <p class="accomodationPrice">Night starting at <em>23€</em></p>
+                                    <div class="ratingContainer">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                            </article>
+        
+                            <article id="accomodationsArticle6" class="accomodations">
+                                <div class="accomPhoto">
+                                    <!-- allows me to keep full image size -->
+                                    <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                                </div>
+                                <div class="articleText">
+                                    <!-- contains text content -->
+                                    <h3 class="accomodationName">Hotel chez Amina</h3>
+                                    <p class="accomodationPrice">Night starting at <em>96€</em></p>
+                                    <div class="ratingContainer">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="showCont">
+                            <a href="#">Show More</a>
+                        </div>
+                    </main>
     
-                    <article id="accomodationsArticle1" class="accomodations">
-                        <img src="#" alt="Bedroom shot of Auberge la Cannebiere. This picture highlights a well maintaned shared room that features 3 bunk beds and boasts a scenic view of the town">
-                        <h3 class="accomodationName">Auberge la Cannebiere</h3>
-                        <p class="accomodationPrice">Night starting at <em>25€</em></p>
-                        <div class="ratingContainer">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
+                    <aside id="mostPopularResults">
+                        <!-- most popular top 3 results container -->
+                        <div class="legendContainer">
+                            <h2>Most Popular</h2>
+                            <i class="fa-solid fa-star"></i>
                         </div>
-                    </article>
-    
-                    <article id="accomodationsArticle2" class="accomodations">
-                        <img src="#" alt="">
-                        <h3 class="accomodationName">Hotel du port</h3>
-                        <p class="accomodationPrice">Night starting at <em>52€</em></p>
-                        <div class="ratingContainer">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </article>
-    
-                    <article id="accomodationsArticle3" class="accomodations">
-                        <img src="#" alt="">
-                        <h3 class="accomodationName">Les mouettes Hotel</h3>
-                        <p class="accomodationPrice">Night starting at <em>76€</em></p>
-                        <div class="ratingContainer">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </article>
-    
-                    <article id="accomodationsArticle4" class="accomodations">
-                        <img src="#" alt="">
-                        <h3 class="accomodationName">Hotel de la mer</h3>
-                        <p class="accomodationPrice">Night starting at <em>46€</em></p>
-                        <div class="ratingContainer">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </article>
-    
-                    <article id="accomodationsArticle5" class="accomodations">
-                        <img src="#" alt="">
-                        <h3 class="accomodationName">Auberge Le Panier</h3>
-                        <p class="accomodationPrice">Night starting at <em>23€</em></p>
-                        <div class="ratingContainer">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </article>
-    
-                    <article id="accomodationsArticle6" class="accomodations">
-                        <img src="#" alt="">
-                        <h3 class="accomodationName">Hotel chez Amina</h3>
-                        <p class="accomodationPrice">Night starting at <em>96€</em></p>
-                        <div class="ratingContainer">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </article>
-                </main>
-    
-                <aside id="mostPopularResults">
-                    <div class="mostPopularTitleContainer">
-                        <h2>Most Popular</h2>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <article id="article1" class="mostPopular">
-                        <img src="#" alt="">
-                        <h3 class="accomodationName">Morning Sun Hotel</h3>
-                        <p class="accomodationPrice">Night starting at <em>128€</em></p>
-                        <div class="ratingContainer">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </article>
-    
-                    <article id="article2" class="mostPopular">
-                        <img src="#" alt="">
-                        <h3 class="accomodationName">Au coeur de l'eau Bed and Breakfast</h3>
-                        <p class="accomodationPrice">Night starting at <em>€</em></p>
-                        <div class="ratingContainer">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </article>
-                    <article id="article3" class="mostPopular">
-                        <img src="#" alt="">
-                        <h3 class="accomodationName">Tout bleu et Blanc Hotel</h3>
-                        <p class="accomodationPrice">Night starting at <em>68€</em></p>
-                        <div class="ratingContainer">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </article>
-                </aside>
+                        <!-- three articles for 'most popular' -->
+                        <article id="article1" class="mostPopular">
+                           <div class="accomPhoto">
+                                <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                           </div>
+                            <div class="articleText">
+                                <h3 class="accomodationName">Morning Sun Hotel</h3>
+                                <p class="accomodationPrice">Night starting at <em>128€</em></p>
+                                <div class="ratingContainer">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="article2" class="mostPopular">
+                            <div class="accomPhoto">
+                                 <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                            </div>
+                             <div class="articleText">
+                                 <h3 class="accomodationName">Au coeur de l'eau Bed and Breakfast</h3>
+                                 <p class="accomodationPrice">Night starting at <em>128€</em></p>
+                                 <div class="ratingContainer">
+                                     <span class="fa fa-star checked"></span>
+                                     <span class="fa fa-star checked"></span>
+                                     <span class="fa fa-star checked"></span>
+                                     <span class="fa fa-star checked"></span>
+                                     <span class="fa fa-star"></span>
+                                 </div>
+                             </div>
+                         </article>
+
+                        <article id="article3" class="mostPopular">
+                            <div class="accomPhoto">
+                                <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                            </div>
+                            <div class="articleText">
+                                <h3 class="accomodationName">Tout bleu et Blanc Hotel</h3>
+                                <p class="accomodationPrice">Night starting at <em>68€</em></p>
+                                <div class="ratingContainer">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </div>
+                        </article>
+                    </aside>
+               </div>
     
     
                 <section id="activitiesResults">
+                    <!-- activities in Marseille article container -->
                     <h2>Activities in Marseille</h2>
                     <div class="activitiesContainer">
                         <article id="activityArticle1" class="activities">
