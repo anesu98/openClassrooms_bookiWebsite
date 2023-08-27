@@ -51,20 +51,18 @@ body {
 
     /* setting the sizes for conatiner */
     width: 100%;
-    /* centralising properties for container*/
+    /* centralising properties for container */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* backgroubd */
+    background-color: var(--backgroundGrey);
 }
 
 footer {
     /* Should be in line with .mainContContainer */
 
-    /* highlighting element for page placement */
-    border-color: red;
-    border-style: solid;
-    border-width: 1px;
     /* setting the sizes for conatiner */
     width: 926px; /* 926px/1000px = 92.6% (figma image legths) */
 }

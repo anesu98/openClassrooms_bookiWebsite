@@ -1,3 +1,51 @@
 footer {
     display: flex;
 }
+
+footer .footerLinksContainer {
+    /* sizes for that container */
+    height: 142px;
+    width: 312px;
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* extra normalisastion */
+    padding: 0;
+    margin: 0;
+
+}
+
+footer h2 {
+    /* extra normalisastion */
+    padding: 0;
+    margin: 0 0 15px 0;
+    /* font attributes */
+    text-align: center;
+    font-size: 12px;
+}
+
+footer ul {
+    /* more normalising */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    /* extra normalisastion */
+    margin: 0 0 6px 0;
+    padding: 0;
+    /* font attributes */
+    text-align: start;
+    font-size: 11px;
+    text-decoration: none;
+
+}
+
+footer ul a {
+    /* font attributes */
+    text-decoration: none;
+    color: black;
+}

@@ -38,10 +38,6 @@
 
 .accomMostPopular #accomodationResults {
     /* setting the accomodation first 6 results */
-    /* setting the border template for the container */
-    border-color: var(--defaultStar);
-    border-style: solid;
-    border-width: 1px;
     /* container sizes */
     height: 435px;
     width: 610px;
@@ -214,10 +210,6 @@
 
 .accomMostPopular #mostPopularResults {
     /* setting the accomodation first 6 results */
-    /* setting the border template for the container */
-    border-color: var(--defaultStar);
-    border-style: solid;
-    border-width: 1px;
     /* container sizes */
     height: 435px;
     width: 289px;
