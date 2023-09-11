@@ -299,9 +299,9 @@
 #mostPopularResults .mostPopular .accomPhoto img {
     /* properties for article photos */
     /* making sure that the photo fits the container and doesn't lose quality */
-    object-fit: contain;
-    max-width: 160%;
-    max-height: auto; 
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%; 
 }
 
 #mostPopularResults .mostPopular .articleText {
@@ -365,4 +365,87 @@
 #mostPopularResults .mostPopular .articleText .ratingContainer .checked {
     /* highlighted colouring for star rating */
     color: var(--blue);
+}
+
+@media (max-width: 767px) {
+    /* styles for mobile phones using the iphone 8 as our focused device */
+    .mainArticleContainer .accomMostPopular {
+        height: 1800.9px;
+        width: 260px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        /* temp border */
+        border-color: teal;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .accomMostPopular #accomodationResults {
+        /* sizing properties */
+        height: 989.9px;
+        width: 260px;
+        /* background properties */
+        background-color: white;
+        /* flex properties */
+        align-items: center;
+        justify-content: center;
+        /* temp border */
+        border-color: red;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    #accomodationResults .legendContainer {
+        /* controlling the container for the legend */
+        /* setting up size properties for the container */
+        height: 36px;
+        width: 234.38px;
+    }
+
+    #accomodationResults .accomArticleContainer {
+        /* setting up size properties for the container */
+        height: 889.2px;
+        width: 240px;
+        /* flex properties */
+        gap: 7.986px;
+    }
+
+    .accomArticleContainer .accomodations {
+        /* controlling the container for individual accomodation articles */
+        /* setting the border template for the container */
+        border-color: var(--defaultStar);
+        border-style: solid;
+        border-width: 1px;
+        /* size properties for accom article */
+        height: 138.8px;
+        width: 234.38px;
+    }
+
+    .accomArticleContainer .accomodations .accomPhoto {
+        /* controlling the photos for individual accomodation articles */
+        /* setting size */
+        height: 80px;
+        width: 224.65px;
+        /* border properies for accom article */
+        border-radius: 15px 15px 0 0;
+    }
+
+    .accomArticleContainer .accomodations .articleText {
+        /* controlling the text container of the article */
+        /* setting size properties */
+        height: 50px;
+        width: 224.65px; 
+    }
+
+    #accomodationResults .showCont {
+        /* controlling the 'show more' container */
+        /* setting up size properties for the container */
+        height: 27.77px;
+        width: 234.38px;
+    }
 }

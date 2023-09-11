@@ -1,5 +1,6 @@
 footer {
     display: flex;
+    flex-direction: row;
 }
 
 footer .footerLinksContainer {
@@ -49,3 +50,31 @@ footer ul a {
     text-decoration: none;
     color: black;
 }
+
+@media (max-width: 767px) {
+    /* styles for mobile phones using the iphone 8 as our focused device */
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 337.5px;
+        gap: 26.7px;
+    }
+
+    footer .footerLinksContainer {
+        /* sizes for that container */
+        height: fit-content;
+        width: 214.86px;  
+    }
+
+    footer h2 { 
+        /* font attributes */
+        font-size: 14px;
+    }
+
+    footer ul li {
+        /* font attributes */
+        font-size: 12px;
+    }
+}
+
