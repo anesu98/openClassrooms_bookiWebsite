@@ -95,3 +95,46 @@ footer {
         width: 260px; /* 926px/1000px = 92.6% (figma image legths) */
     }
 }
+
+@media (min-width:768px) and (max-width: 992px) {
+    /* styles for mobile phones using the iphone 8 as our focused device */
+    .mainContentContainer {
+        /* Used to centralise main content whilst keeping
+        everything on edges in line. Should Always be central
+        nomatter screen size */
+    
+        /* extra normalisation */
+        margin: 0;
+        /* setting the sizes for conatiner */
+        width: 700px; /* 926px/1000px = 92.2% (figma image legths) */
+
+        /* style box */
+        border-width: 1px;
+        border-style: solid;
+        border-color: teal;
+    }
+
+    .footerContainer {
+        /* Should always be as long as page so background can
+        be greyed out. Should allow footer to be in line with
+        .mainContContainer */
+    
+        /* setting the sizes for conatiner */
+        width: 750px;
+        /* style box */
+        border-width: 1px;
+        border-style: solid;
+        border-color: teal;
+    }
+
+    footer {
+        /* Should be in line with .mainContContainer */
+    
+        /* setting the sizes for conatiner */
+        width: 700px; /* 926px/1000px = 92.6% (figma image legths) */
+        /* style box */
+        border-width: 1px;
+        border-style: solid;
+        border-color: teal;
+    }
+}
