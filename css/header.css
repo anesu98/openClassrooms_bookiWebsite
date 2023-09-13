@@ -185,9 +185,10 @@
     border-style: solid;
     border-color: var(--searchbarOutline);
     border-width: 1px;
+    border-radius: 15px;
     /* search input size */
     height: 35px;
-    width: 163px;
+    width: 264px;
     /* search input container centralising */
     display: flex;
     align-items: center;
@@ -202,7 +203,7 @@
     /* input extra normalisation */
     outline: none;
     /* input size */
-    width: 80%;
+    width: 60%;
     height: 80%;
     
 }
