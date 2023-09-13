@@ -157,10 +157,6 @@
         /* styles for the section */
         height: 956.9px;
         width: 260px;
-        /* temp border */
-        border-color: teal;
-        border-width: 1px;
-        border-style: solid;
         /* flex properties */
         display: flex;
         align-items: center;

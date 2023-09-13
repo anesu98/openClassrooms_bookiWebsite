@@ -370,7 +370,7 @@
 @media (max-width: 767px) {
     /* styles for mobile phones using the iphone 8 as our focused device */
     .mainArticleContainer .accomMostPopular {
-        height: 1800.9px;
+        height: 1388.194444444444444px;
         width: 260px;
         display: flex;
         flex-direction: column-reverse;
@@ -379,11 +379,90 @@
         margin: 0;
         padding: 0;
         gap: 0;
-        /* temp border */
-        border-color: teal;
-        border-width: 1px;
-        border-style: solid;
     }
+
+    /* Most Popular */
+
+    .accomMostPopular #mostPopularResults {
+        /* setting the accomodation first 6 results */
+        /* container sizes */
+        height: 404px;
+        width: 260px;
+        /* setting the flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6.94px;
+        /* container colour */
+        background-color: var(--backgroundGrey);
+        border-radius: 0;
+    }
+    
+    #mostPopularResults .legendContainer {
+        /* properties for 'most popular' legend */
+        /* setting the flex properties */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* container sizes */
+        height: 44.8px;
+        width: 240px;
+    }
+    
+    
+    #mostPopularResults .mostPopular {
+        /* properties for most popular articles */
+        /* setting the border template for the container */
+        border-color: var(--defaultStar);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        /* container sizes */
+        height: 100px;
+        width: 231.944444444444444px;
+        /* setting flex properties to center images */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        /* container background */
+        background-color: var(--backgroundWhite);
+    }
+    
+    #mostPopularResults .mostPopular .accomPhoto {
+        /* properties for article photos */
+        /* setting the border template for the container */
+        border-color: var(--defaultStar);
+        border-style: solid;
+        border-width: 1px;
+        /* setting size */
+        height: 92.013888888888889px;
+        width: 86px;
+        /* setting flex properties to center images */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* making sure the full image fits without falling out of the container */
+        overflow: hidden;
+        /* border properies for accom article */
+        border-radius: 10px 0 0 10px;
+    }
+    
+    #mostPopularResults .mostPopular .articleText {
+        /* properties for article text box */
+        /* setting size */
+        height: 81.25px;
+        width: 126px;
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    /* Accomodations */
 
     .accomMostPopular #accomodationResults {
         /* sizing properties */
@@ -394,10 +473,6 @@
         /* flex properties */
         align-items: center;
         justify-content: center;
-        /* temp border */
-        border-color: red;
-        border-width: 1px;
-        border-style: solid;
     }
 
     #accomodationResults .legendContainer {
@@ -447,5 +522,6 @@
         /* setting up size properties for the container */
         height: 27.77px;
         width: 234.38px;
+        margin-top: 10.88px;
     }
 }

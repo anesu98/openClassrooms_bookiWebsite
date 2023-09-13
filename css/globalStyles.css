@@ -77,10 +77,6 @@ footer {
         margin: 0;
         /* setting the sizes for conatiner */
         width: 260px; /* 926px/1000px = 92.2% (figma image legths) */
-        /* temp border */
-        border-color: teal;
-        border-width: 1px;
-        border-style: solid;
     }
 
     .footerContainer {
@@ -97,10 +93,5 @@ footer {
     
         /* setting the sizes for conatiner */
         width: 260px; /* 926px/1000px = 92.6% (figma image legths) */
-
-        /* temp border */
-        border-color: teal;
-        border-width: 1px;
-        border-style: solid;
     }
 }
