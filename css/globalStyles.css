@@ -108,10 +108,6 @@ footer {
         /* setting the sizes for conatiner */
         width: 700px; /* 926px/1000px = 92.2% (figma image legths) */
 
-        /* style box */
-        border-width: 1px;
-        border-style: solid;
-        border-color: teal;
     }
 
     .footerContainer {
@@ -120,21 +116,14 @@ footer {
         .mainContContainer */
     
         /* setting the sizes for conatiner */
-        width: 750px;
-        /* style box */
-        border-width: 1px;
-        border-style: solid;
-        border-color: teal;
+        width: 700px;
     }
 
     footer {
         /* Should be in line with .mainContContainer */
     
         /* setting the sizes for conatiner */
-        width: 700px; /* 926px/1000px = 92.6% (figma image legths) */
+        width: 650px; /* 926px/1000px = 92.6% (figma image legths) */
         /* style box */
-        border-width: 1px;
-        border-style: solid;
-        border-color: teal;
     }
 }

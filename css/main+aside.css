@@ -397,6 +397,7 @@
         /* container colour */
         background-color: var(--backgroundGrey);
         border-radius: 0;
+        
     }
     
     #mostPopularResults .legendContainer {
@@ -523,5 +524,188 @@
         height: 27.77px;
         width: 234.38px;
         margin-top: 10.88px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    #mainContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* styles for mobile phones using the iphone 8 as our focused device */
+    .mainArticleContainer .accomMostPopular {
+        height: auto;
+        width: 650px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    /* Most Popular */
+
+    .accomMostPopular #mostPopularResults {
+        /* setting the accomodation first 6 results */
+        /* container sizes */
+        height: 404px;
+        width: 250px;
+        /* setting the flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6.94px;
+        /* container colour */
+        background-color: var(--backgroundGrey);
+        border-radius: 10px;
+        border-color: var(--backgroundGrey);
+    }
+    
+    #mostPopularResults .legendContainer {
+        /* properties for 'most popular' legend */
+        /* setting the flex properties */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* container sizes */
+        height: 44.8px;
+        width: 231px;
+    }
+    
+    .mostPopularArticleContainer {
+        /* container sizes */
+        height: fit-content;
+        width: fit-content;
+        /* setting the flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    
+    #mostPopularResults .mostPopular {
+        /* properties for most popular articles */
+        /* setting the border template for the container */
+        border-color: var(--defaultStar);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        /* container sizes */
+        height: 100px;
+        width: 231.944444444444444px;
+        /* setting flex properties to center images */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+        /* container background */
+        background-color: var(--backgroundWhite);
+    }
+    
+    #mostPopularResults .mostPopular .accomPhoto {
+        /* properties for article photos */
+        /* setting the border template for the container */
+        border-color: var(--defaultStar);
+        border-style: solid;
+        border-width: 1px;
+        /* setting size */
+        height: 92.013888888888889px;
+        width: 86px;
+        /* setting flex properties to center images */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* making sure the full image fits without falling out of the container */
+        overflow: hidden;
+        /* border properies for accom article */
+        border-radius: 10px 0 0 10px;
+    }
+    
+    #mostPopularResults .mostPopular .articleText {
+        /* properties for article text box */
+        /* setting size */
+        height: 81.25px;
+        width: 126px;
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    /* Accomodations */
+
+    .accomMostPopular #accomodationResults {
+        /* sizing properties */
+        height: auto;
+        width: 385px;
+        /* background properties */
+        background-color: var(--backgroundGrey);
+        /* flex properties */
+        align-items: center;
+        justify-content: center;
+        /* style box */
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--searchbarOutline);
+    }
+
+    #accomodationResults .legendContainer {
+        /* controlling the container for the legend */
+        /* setting up size properties for the container */
+        height: 36px;
+        width: 359px;
+    }
+
+    #accomodationResults .accomArticleContainer {
+        /* setting up size properties for the container */
+        height: auto;
+        width: 359px;
+        /* flex properties */
+        gap: 7.986px;
+    }
+
+    .accomArticleContainer .accomodations {
+        /* controlling the container for individual accomodation articles */
+        /* setting the border template for the container */
+        border-color: var(--defaultStar);
+        border-style: solid;
+        border-width: 1px;
+        /* size properties for accom article */
+        height: 138.8px;
+        width: 171px;
+    }
+
+    .accomArticleContainer .accomodations .accomPhoto {
+        /* controlling the photos for individual accomodation articles */
+        /* setting size */
+        height: 80px;
+        width: 163px;
+        /* border properies for accom article */
+        border-radius: 15px 15px 0 0;
+    }
+
+    .accomArticleContainer .accomodations .articleText {
+        /* controlling the text container of the article */
+        /* setting size properties */
+        height: 50px;
+        width: 145px; 
+    }
+
+    #accomodationResults .showCont {
+        /* controlling the 'show more' container */
+        /* setting up size properties for the container */
+        height: 27.77px;
+        width: 350px;
+        margin-top: 10.88px;
+        margin-bottom: 10.88px;
     }
 }
