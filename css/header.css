@@ -26,7 +26,8 @@
     display: flex;
     justify-content: space-between;
     /* navbar overall size*/
-    height: 75px;
+    min-height: 75px;
+    max-height: 216px;
     /* navbar extra normalisation*/
     margin: 0;
     padding: 0;
@@ -43,14 +44,17 @@
     margin: 0;
     padding: 0;
     /* navigation list sizes */
-    height: 75px;
+    min-height: 75px;
+    max-height: 216px;
 }
 
 #navBar ul li {
     /* individual navigation boxes for links */
     /* navigation link container sizes */
-    width: 112px;
-    height: 74px;
+    min-width: 112px;
+    max-width: 322.56px;
+    min-height: 74px;
+    max-height: 213.12px;
     /* nav link flex; centralising the words */
     display: flex;
     align-items: center;

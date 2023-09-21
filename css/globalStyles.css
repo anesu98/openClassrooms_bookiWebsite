@@ -40,7 +40,9 @@ body {
     /* extra normalisation */
     margin: 0;
     /* setting the sizes for conatiner */
-    width: 926px; /* 926px/1000px = 92.2% (figma image legths) */
+    min-width: 926px; /* 926px/1000px = 92.2% (figma image legths) */
+    width: 92.2%;
+    max-width: 2666.88px;
 }
 
 .footerContainer {
@@ -55,7 +57,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* backgroubd */
+    /* background */
     background-color: var(--backgroundGrey);
 }
 
@@ -63,7 +65,9 @@ footer {
     /* Should be in line with .mainContContainer */
 
     /* setting the sizes for conatiner */
-    width: 926px; /* 926px/1000px = 92.6% (figma image legths) */
+    min-width: 926px;
+    width: 92.6%;
+    max-width: 2666.88px;
 }
 
 @media (max-width: 767px) {
@@ -76,7 +80,9 @@ footer {
         /* extra normalisation */
         margin: 0;
         /* setting the sizes for conatiner */
-        width: 260px; /* 926px/1000px = 92.2% (figma image legths) */
+        min-width: 260px;
+        width: 100%;
+        max-width: 748.8px;
     }
 
     .footerContainer {
@@ -85,14 +91,18 @@ footer {
         .mainContContainer */
     
         /* setting the sizes for conatiner */
-        width: 260px;
+        min-width: 260px;
+        width: 100%;
+        max-width: 748.8px;
     }
 
     footer {
         /* Should be in line with .mainContContainer */
     
         /* setting the sizes for conatiner */
-        width: 260px; /* 926px/1000px = 92.6% (figma image legths) */
+        min-width: 260px;
+        width: 100%;
+        max-width: 748.8px;
     }
 }
 
@@ -106,7 +116,9 @@ footer {
         /* extra normalisation */
         margin: 0;
         /* setting the sizes for conatiner */
-        width: 700px; /* 926px/1000px = 92.2% (figma image legths) */
+        min-width: 700px;
+        width: 100%;
+        max-width: 2016px;
 
     }
 
@@ -116,14 +128,17 @@ footer {
         .mainContContainer */
     
         /* setting the sizes for conatiner */
-        width: 700px;
+        min-width: 700px;
+        width: 100%;
+        max-width: 2016px;
     }
 
     footer {
         /* Should be in line with .mainContContainer */
     
         /* setting the sizes for conatiner */
-        width: 650px; /* 926px/1000px = 92.6% (figma image legths) */
-        /* style box */
+        min-width: 650px;
+        width: 92.86%;
+        max-width: 1872px;
     }
 }

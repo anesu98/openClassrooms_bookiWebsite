@@ -5,8 +5,10 @@ footer {
 
 footer .footerLinksContainer {
     /* sizes for that container */
-    height: 142px;
-    width: 312px;
+    min-height: 142px;
+    max-height: 408.96px;
+    min-width: 312px;
+    max-width: 898.56px;
     /* flex properties */
     display: flex;
     flex-direction: column;
@@ -57,14 +59,16 @@ footer ul a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 337.5px;
+        min-height: 337.5px;
+        max-height: 972px;
         gap: 26.7px;
     }
 
     footer .footerLinksContainer {
         /* sizes for that container */
         height: fit-content;
-        width: 214.86px;  
+        min-width: 214.86px;
+        max-width: 618.8;
     }
 
     footer h2 { 
