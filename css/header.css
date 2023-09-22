@@ -21,13 +21,21 @@
 
 /************ navigation bar ***************/
 
+header {
+    /* overall header size */
+    min-height: 297px;
+    height: 23.15%;
+    max-height: 445.5px;
+}
+
 #navBar {
     /* navbar content split */
     display: flex;
     justify-content: space-between;
-    /* navbar overall size*/
+    /* navbar overall size */
     min-height: 75px;
-    max-height: 216px;
+    height: 25.25%;
+    max-height: 112.5px;
     /* navbar extra normalisation*/
     margin: 0;
     padding: 0;
@@ -45,16 +53,18 @@
     padding: 0;
     /* navigation list sizes */
     min-height: 75px;
-    max-height: 216px;
+    height: 100%;
+    max-height: 112.5px;
 }
 
 #navBar ul li {
     /* individual navigation boxes for links */
-    /* navigation link container sizes */
+    /* navigation link container sizes  */
     min-width: 112px;
     max-width: 322.56px;
-    min-height: 74px;
-    max-height: 213.12px;
+    min-height: 75px;
+    height: 98%;
+    max-height: 112.5px;
     /* nav link flex; centralising the words */
     display: flex;
     align-items: center;
@@ -69,6 +79,7 @@
     allows the the whole inside of nav link to be
     interractive */
     /* anchor sizes */
+    min-height: 74px;
     height: 100%;
     width: 100%;
     /* anchor extra normalisation */
@@ -99,6 +110,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* logo image sizes for desktop */
+    min-height: 75px;
+    height: 100%;
 }
 
 #bookieLogo img {
@@ -209,7 +223,6 @@
     /* input size */
     width: 60%;
     height: 80%;
-    
 }
 
 .locationSearchBar .searchSubmit {
@@ -769,7 +782,9 @@
 
         /* navbar overall size*/
         height: 91.66px;
-        width: 700px;
+        /*height: 6.43%;*/
+        min-width: 700px;
+        width: 100%;
         /* navbar extra normalisation*/
         margin: 0;
         padding: 0;
@@ -787,7 +802,8 @@
         padding: 0;
         /* navigation list sizes */
         height: 29.5138px;
-        width: 700px;
+        min-width: 700px;
+        width: 100%;
         /* grey bar */
         border-width: 0 0 2.430px 0;
         border-style: solid;
@@ -797,8 +813,9 @@
     #navBar ul li {
         /* individual navigation boxes for links */
         /* navigation link container sizes */
-        width: 350px;
-        height: 29.5138px;
+        min-height: 350px;
+        width: 50%;
+        
         /* nav link flex; centralising the words */
         display: flex;
         align-items: center;

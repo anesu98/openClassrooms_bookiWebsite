@@ -536,8 +536,13 @@
     }
     /* styles for mobile phones using the iphone 8 as our focused device */
     .mainArticleContainer .accomMostPopular {
-        height: auto;
-        width: 650px;
+        min-height: 550px;
+        height: 42.86%;
+        max-height: 1000px;
+        min-width: 650px;
+        width: 92.86%;
+        max-width: 1872px;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -552,14 +557,17 @@
     .accomMostPopular #mostPopularResults {
         /* setting the accomodation first 6 results */
         /* container sizes */
-        height: 404px;
-        width: 250px;
+        min-height: 454px;
+        height: 82.55%;
+        max-height: 1307.52;
+        min-width: 250px;
+        width: 38.46%;
+        max-width: 720px;
         /* setting the flex properties */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 6.94px;
         /* container colour */
         background-color: var(--backgroundGrey);
         border-radius: 10px;
@@ -574,8 +582,11 @@
         justify-content: space-between;
         align-items: center;
         /* container sizes */
-        height: 44.8px;
-        width: 231px;
+        min-height: 44.8px;
+        height: 10%;
+        max-height: 129.034px;
+        min-width: 231px;
+        max-width: 665.28px;
     }
     
     .mostPopularArticleContainer {
@@ -588,6 +599,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        gap: 6.5px;
     }
 
     
@@ -645,8 +657,9 @@
 
     .accomMostPopular #accomodationResults {
         /* sizing properties */
-        height: auto;
-        width: 385px;
+        height: 550px;
+        min-width: 385px;
+        width: 59.23%;
         /* background properties */
         background-color: var(--backgroundGrey);
         /* flex properties */
@@ -661,8 +674,9 @@
     #accomodationResults .legendContainer {
         /* controlling the container for the legend */
         /* setting up size properties for the container */
-        height: 36px;
+        height: 50px;
         width: 359px;
+        padding-top: 10px;
     }
 
     #accomodationResults .accomArticleContainer {

@@ -21,12 +21,18 @@
 
 
 body {
-    /* extra normalisation */
+    /* extra normalisation 
+    min-height: 1435.16px;
+    height: auto;
+    min-width: 1000px;
+    width: auto;
+    */
     margin: 0;
+    
     /* centralising properties for body tag*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     /* global scope styles */
     font-family: 'Raleway', sans-serif;
@@ -39,11 +45,16 @@ body {
 
     /* extra normalisation */
     margin: 0;
-    /* setting the sizes for conatiner */
+    /* setting the sizes for conatiner
+    min-height: 1283.16px;
+    */
+    height: 90%;
+    max-height: 3695.5px;
     min-width: 926px; /* 926px/1000px = 92.2% (figma image legths) */
-    width: 92.2%;
-    max-width: 2666.88px;
+    width: 70%;
+    max-width: 1389px;
 }
+
 
 .footerContainer {
     /* Should always be as long as page so background can
@@ -52,6 +63,7 @@ body {
 
     /* setting the sizes for conatiner */
     width: 100%;
+    height: 10%;
     /* centralising properties for container */
     display: flex;
     flex-direction: column;
@@ -66,8 +78,8 @@ footer {
 
     /* setting the sizes for conatiner */
     min-width: 926px;
-    width: 92.6%;
-    max-width: 2666.88px;
+    width: 70%;
+    max-width: 1389px;
 }
 
 @media (max-width: 767px) {
@@ -107,7 +119,7 @@ footer {
 }
 
 @media (min-width:768px) and (max-width: 992px) {
-    /* styles for mobile phones using the iphone 8 as our focused device */
+    /* total height 1425.16px */
     .mainContentContainer {
         /* Used to centralise main content whilst keeping
         everything on edges in line. Should Always be central
