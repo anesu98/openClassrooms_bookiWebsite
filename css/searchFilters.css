@@ -1,0 +1,154 @@
+/***** search filter ******/
+
+#searchFilter {
+    /* filter container size */
+    min-height: 65px;
+    height: fit-content;
+    /* filter container flex properties: row + the space between */
+    display: flex;
+    justify-content: flex-start;
+    gap: 0px 12px;
+
+}
+    
+#searchFilter .filterLegend {
+    /* filter legend text centralising */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+    
+.filterLegend p {
+    /* font size found by area made of Height x Width */
+    height: 11px;
+    width: 37px;
+    font-size: 13.25px;
+    font-weight: 700;
+}
+    
+#searchFilter .filterOptionContainer {
+    /* Considering there might be a lot of filters that
+    might be created by script, allow there to be space
+    to either allow them to slide or stack */
+    /* container fixed size */
+    min-height: 65px;
+    height: fit-content;
+    width: 861.95px;
+    /* centralising the container contents */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px 16px;
+    /* method to accomodate more possible filters */
+    flex-wrap: wrap;
+}
+    
+.filterOptionContainer .filterOption {
+    /* filter border + style */
+    border-style: solid;
+    border-width: 1px;
+    /* filter container shape */
+    border-color: grey;
+    border-radius: 27px;
+    display: flex;
+    flex-direction: row;
+    /* properties to allow different filter legnths */
+    height: 31px;
+    width: fit-content;
+    align-items: center;
+    
+}
+    
+.filterButton {
+    /* container for new options*/
+    /* filter border + style */
+    border-style: solid;
+    border-width: 1px;
+    /* filter container shape */
+    border-color: var(--backgroundGrey);
+    border-radius: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /* properties to allow different filter legnths */
+    height: 34px;
+    width: fit-content;
+    align-items: center;
+    /* space between words and edge */
+    padding: 0 13px 0 0;
+    /* font size + colour*/
+    font-size: 10.7px;
+    font-weight: 600;
+    background-color: white;
+}
+
+.filterIcon {
+    border-color: var(--backgroundGrey);
+    border-style: solid;
+    border-width: 1px;
+    /* centralising the icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* icon shape */
+    height: 35px;
+    width: 35px;
+    border-radius: 26px;
+    /* space between icon and text */
+    margin: 0 10px 0 0;
+    /* icon size + colour */
+    font-size: 13px;
+    color: var(--blue);
+    background-color: var(--lighterBlue);
+
+    /* why is the icon jumping out of place when page is refreshed? */
+}
+
+.filterButton:hover {
+    /* not specified in brief, so just a reminder for 
+    demonstration */
+    background-color: var(--backgroundGrey);
+}
+
+#searchResultQuant {
+    /* setting the size of the search results container */
+    /* container sizes */
+    height: 50px;
+    /* flex options for container */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+#searchResultQuant .infoIcon {
+    /* setting the size of the info bar */
+    /* highlighting container for page placement */
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 90px;
+    /* size of the icon */
+    height: 17px;
+    width: 17px;
+    /* flex options for container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* icon size */
+    font-size: 10px;
+    color: var(--blue);
+}
+
+#searchResultQuant p {
+    /* setting the size of the info bar */
+    /* size of the icon */
+    height: 35px;
+    width: 274px;
+    /* font for search results */
+    font-size: 11px;
+}

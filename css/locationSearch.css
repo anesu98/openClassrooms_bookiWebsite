@@ -1,0 +1,128 @@
+#locationSearch {
+    /* location search container */
+    /* conatiner and content sizing */
+    height: 107px;
+    /* container flex - stacked on top of each other */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#locationSearch p {
+    /* form title */
+    /* title size according to figma */
+    height: 17px;
+    width: 275px;
+    /* title normalisation */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* fitting font size to the figma box */
+    font-size: 15.65px;
+    font-weight: 700;
+}
+
+#locationSearch fieldset {
+    /* fieldset normalisation */
+    margin: 0;
+    padding: 0;
+    width: fit-content; 
+    /* fieldset sizes */
+    height: 10px;
+    font-size: 12.5px;
+    border-style: none;
+}
+
+#locationSearch .locationSearchBar {
+    /* search bar flex properties: row + centralising */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* search bar sizes */
+    height: auto;
+    width: fit-content;
+}
+
+.locationSearchBar .locationIconContainer {
+    /* container for search bar icon */
+    /* icon container border */
+    border-style: solid;
+    border-color: var(--searchbarOutline);
+    border-width: 1px;
+    /* icon container shape and colour */
+    background-color: var(--backgroundGrey);
+    border-radius: 12px 0 0 12px;
+    /* icon container sizes */
+    height: 35px;
+    width: 36px;
+    /* icon container flex: centralising */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locationIconContainer i {
+    /* icon sizes */
+    font-size: 12px;
+    /* icon centralising - within i tag container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationSearchBar .searchInputContainer {
+    /* !!!! might need to find a better way that allows me
+    to remove this container */
+    /* search input border */
+    border-style: solid;
+    border-color: var(--searchbarOutline);
+    border-width: 1px;
+    border-radius: 15px;
+    /* search input size */
+    height: 35px;
+    width: 264px;
+    /* search input container centralising */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInputContainer input {
+    /* input borders */
+    border-style: none;
+    border-color: var(--searchbarOutline);
+    border-width: 1px;
+    /* input extra normalisation */
+    outline: none;
+    /* input size */
+    width: 60%;
+    height: 80%;
+}
+
+.locationSearchBar .searchSubmit {
+    /* submit button border */
+    border-style: solid;
+    border-color: var(--searchbarOutline);
+    border-width: 1px;
+    /* submit button design */
+    border-radius: 0 12px 12px 0;
+    background-color: var(--blue);
+    /* submit button size */
+    height: 37.2px;
+    width: 64px;
+    /* centralising submit button text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* submit button font styles */
+    font-size: 12px;
+    color: white;
+}
+
+.searchMob {
+    display: none;
+}
+
+.searchDesk {
+    display: inline;  
+}

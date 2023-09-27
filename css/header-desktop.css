@@ -1,0 +1,460 @@
+@media only screen and (min-width: 992px) {
+    /* desktop styles */
+
+    /* normalise styles designed for desktops */
+
+    body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+        width: 100%;
+        min-height: 1318.75px;
+        /**/
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .mainContentContainer {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+        width: 92.6%;
+        max-width: 1389px;
+    }
+
+    /* global styles */
+
+    header {
+        /* header flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /**/
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* navbar styles */
+
+    /* whole navbar styles */
+    
+    #navBar {
+        /* navbar content split */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* navbar overall size */
+        min-height: 75px;
+        height: 5.69%;
+        width: 100%;
+        /* navbar extra normalisation*/
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* booki logo styles */
+    
+    #bookieLogo {
+        /* logo container/anchor that leads back to home page 
+        on functional website*/
+        /* logo extra normalisation */
+        border-width: 1px;
+        /* logo photo centralisation */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* logo image sizes for desktop */
+        min-width: 60px;
+        width: 6.5%;
+        /* navbar extra normalisation*/
+        margin: 0;
+        padding: 0;
+    }
+    
+    #bookieLogo img {
+        width: 100%;
+        height: auto;
+        /* navbar extra normalisation*/
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* booki navigation link styles */
+    
+    #navBar ul {
+        /* navigation links for website. used as container */
+        /* navigation list flex styles; row + centralised */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        /* navigation list extra normalisation */
+        margin: 0;
+        padding: 0;
+        /* navigation list sizes */
+        height: 100%;
+        width: fit-content;
+        /* reset */
+        border: 0;
+    }
+    
+    #navBar ul li {
+        /* individual navigation boxes for links */
+        /* navigation link container sizes  */
+        min-width: 112px;
+        width: 12.1%;
+        height: 98%;
+        padding: 0;
+        margin: 0;
+        /* nav link flex; centralising the words */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* nav link extra normalisation */
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
+    #navBar ul li a {
+        /* made the anchor same size as the whole list item.
+        allows the the whole inside of nav link to be
+        interractive */
+        /* anchor sizes */
+        height: 100%;
+        width: 100%;
+        /* anchor extra normalisation */
+        text-decoration: none;
+        text-align: center;
+        font-size: 11.25px;
+        font-weight: 400;
+        color: black;
+        /* pushing the items even more central */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #navBar ul li a:hover {
+        /* adding blue line above for desktop */
+        color: var(--blue);
+        border-style: solid;
+        border-width: 1px 0 0 0;
+    }
+
+    /* desktop location search */
+
+    #locationSearch {
+        /* location search container */
+        /* conatiner and content sizing */
+        height: 107px;
+        width: 25%;
+        /* container flex - stacked on top of each other */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    
+    #locationSearch p {
+        /* form title */
+        /* title size according to figma */
+        height: fit-content;
+        width: fit-content;
+        /* title normalisation */
+        margin: 0;
+        padding: 0;
+        border: 0;
+        /* fitting font size to the figma box */
+        font-size: 15.65px;
+        font-weight: 700;
+    }
+    
+    #locationSearch fieldset {
+        /* fieldset normalisation */
+        margin: 0;
+        padding: 0;
+        width: fit-content; 
+        /* fieldset sizes */
+        height: fit-content;
+        font-size: 12.5px;
+        border-style: none;
+    }
+    
+    #locationSearch .locationSearchBar {
+        /* search bar flex properties: row + centralising */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* search bar sizes */
+        height: auto;
+        width: fit-content;
+    }
+    
+    .locationSearchBar .locationIconContainer {
+        /* container for search bar icon */
+        /* icon container border */
+        border-style: solid;
+        border-color: var(--searchbarOutline);
+        border-width: 1px;
+        /* icon container shape and colour */
+        background-color: var(--backgroundGrey);
+        border-radius: 12px 0 0 12px;
+        /* icon container sizes */
+        height: 35px;
+        width: 36px;
+        /* icon container flex: centralising */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .locationIconContainer i {
+        /* icon sizes */
+        font-size: 12px;
+        /* icon centralising - within i tag container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .locationSearchBar .searchInputContainer {
+        /* !!!! might need to find a better way that allows me
+        to remove this container */
+        /* search input border */
+        border-style: solid;
+        border-color: var(--searchbarOutline);
+        border-width: 1px;
+        border-radius: 15px;
+        /* search input size */
+        height: 35px;
+        width: 264px;
+        /* search input container centralising */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .searchInputContainer input {
+        /* input borders */
+        border-style: none;
+        border-color: var(--searchbarOutline);
+        border-width: 1px;
+        /* input extra normalisation */
+        outline: none;
+        text-indent: 10px;
+        /* input size */
+        width: 60%;
+        height: 80%;
+    }
+    
+    .locationSearchBar .searchSubmit {
+        /* submit button border */
+        border-style: solid;
+        border-color: var(--searchbarOutline);
+        border-width: 1px;
+        /* submit button design */
+        border-radius: 0 12px 12px 0;
+        background-color: var(--blue);
+        /* submit button size */
+        height: 37.2px;
+        width: 64px;
+        /* centralising submit button text */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* submit button font styles */
+        font-size: 12px;
+        color: white;
+    }
+    
+    .searchMob {
+        display: none;
+    }
+    
+    .searchDesk {
+        display: inline;  
+    }
+
+        /***** search filter ******/
+
+    #searchFilter {
+        /* filter container size */
+        min-height: 65px;
+        height: fit-content;
+        /* filter container flex properties: row + the space between */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 0 1.6%;
+    }
+    
+    #searchFilter .filterLegend {
+        /* filter legend text centralising */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: fit-content;
+    }
+    
+    .filterLegend p {
+        /* font size found by area made of Height x Width */
+        height: fit-content;
+        width: fit-content;
+        font-size: 13.25px;
+        font-weight: 700;
+        }
+    
+    #searchFilter .filterOptionContainer {
+        /* Considering there might be a lot of filters that
+        might be created by script, allow there to be space
+        to either allow them to slide or stack */
+        /* container fixed size */
+        min-height: 65px;
+        height: fit-content;
+        width: 861.95px;
+        /* centralising the container contents */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px 16px;
+        /* method to accomodate more possible filters */
+        flex-wrap: wrap;
+    }
+    
+    .filterOptionContainer .filterOption {
+        /* filter border + style */
+        border-style: solid;
+        border-width: 1px;
+        /* filter container shape */
+        border-color: grey;
+        border-radius: 27px;
+        display: flex;
+        flex-direction: row;
+        /* properties to allow different filter legnths */
+        height: 31px;
+        width: fit-content;
+        align-items: center;
+    
+    }
+    
+.filterButton {
+    /* container for new options*/
+    /* filter border + style */
+    border-style: solid;
+    border-width: 1px;
+    /* filter container shape */
+    border-color: var(--backgroundGrey);
+    border-radius: 27px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    /* properties to allow different filter legnths */
+    height: 34px;
+    width: fit-content;
+    align-items: center;
+    /* space between words and edge */
+    padding: 0 13px 0 0;
+    /* font size + colour*/
+    font-size: 13px;
+    font-weight: 600;
+    background-color: white;
+}
+
+.filterOptionContainer .filterButton {
+    font-size: 11px;
+    font-weight: 100;
+}
+
+.filterIcon {
+    border-color: var(--backgroundGrey);
+    border-style: solid;
+    border-width: 1px;
+    /* centralising the icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* icon shape */
+    height: 35px;
+    width: 35px;
+    border-radius: 26px;
+    /* space between icon and text */
+    margin: 0 10px 0 0;
+    /* icon size + colour */
+    font-size: 13px;
+    color: var(--blue);
+    background-color: var(--lighterBlue);
+
+    /* why is the icon jumping out of place when page is refreshed? */
+}
+
+.filterButton:hover {
+    /* not specified in brief, so just a reminder for 
+    demonstration */
+    background-color: var(--backgroundGrey);
+}
+
+#searchResultQuant {
+    /* setting the size of the search results container */
+    /* container sizes */
+    height: 50px;
+    /* flex options for container */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+#searchResultQuant .infoIcon {
+    /* setting the size of the info bar */
+    /* highlighting container for page placement */
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 90px;
+    /* size of the icon */
+    height: 17px;
+    width: 17px;
+    /* flex options for container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* icon size */
+    font-size: 10px;
+    color: var(--blue);
+}
+
+#searchResultQuant p {
+    /* setting the size of the info bar */
+    /* size of the icon */
+    height: 35px;
+    width: 274px;
+    /* font for search results */
+    font-size: 11px;
+}
+
+.filterOptionContainer .filterButton:nth-child(1){
+    order: 1;
+}
+.filterOptionContainer .filterButton:nth-child(2){
+    order: 2;
+}
+.filterOptionContainer .filterButton:nth-child(3){
+    order: 3;
+}
+
+.filterOptionContainer .filterButton:nth-child(4){
+    order: 4;
+}
+        
+}
+

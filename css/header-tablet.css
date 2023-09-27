@@ -1,0 +1,404 @@
+@media only screen and (min-width:768px) {
+    /* styles for tablet devices */
+
+    /* normalise styles for tablet devices */
+
+    body {
+        width: 100%;
+        height: 3159.72222px;
+    }
+
+    .mainContentContainer {
+        width: 100%;
+    }
+
+    /* global styles for tablet devices */
+
+    header {
+        /* header */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        /* size */
+        min-height: 476.39px;
+        height: 16%;
+        min-width: 260px;
+        width: 100%;
+        /* extra normalisation */
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    /* whole navbar styles for tablet */
+
+    #navBar {
+        /* navbar content split */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* navbar overall size*/
+        min-width: 260px;
+        width: 100%;
+        min-height: 91.66px;
+        height: 20%;
+        /* navbar extra normalisation*/
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    /* whole navbar links styles for tablet */
+
+    #navBar ul {
+        /* navigation links for website. used as container */
+        /* navigation list flex styles; row + centralised */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* navigation list extra normalisation */
+        margin: 0;
+        padding: 0;
+        /* navigation list sizes */
+        min-height: 29.5138px;
+        height: 33.2%;
+        min-width: 260px;
+        width: 100%;
+        /* grey bar */
+        border-width: 0 0 2.430px 0;
+        border-style: solid;
+        border-color: var(--backgroundGrey);
+    }
+
+    #navBar ul li {
+        /* individual navigation boxes for links */
+        /* navigation link container sizes */
+        width: 50%;
+        height: 100%;
+        /* nav link flex; centralising the words */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* nav link extra normalisation */
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    #navBar ul li a {
+        /* made the anchor same size as the whole list item.
+        allows the the whole inside of nav link to be
+        interractive */
+        /* anchor sizes */
+        height: 100%;
+        width: 100%;
+        /* anchor extra normalisation */
+        text-decoration: none;
+        text-align: center;
+        font-size: 11.25px;
+        font-weight: 400;
+        color: black;
+        /* pushing the items even more central */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navBar ul li a:hover {
+        /* adding blue line above for tablet */
+        color: var(--blue);
+        border-style: solid;
+        border-width: 0 0 2.430px 0;
+    }
+
+    /* navbar logo styles for tablet */
+
+    #bookieLogo {
+        /* logo container/anchor that leads back to home page 
+        on functional website*/
+        /* logo extra normalisation */
+        border-width: 1px;
+        /* logo photo centralisation */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* logo image container size */
+        min-height: 59.375px;
+        height: 66.8%;
+        width: 260px;
+    }
+
+    #bookieLogo img {
+        /* logo image sizes for tablet */
+        height: 39.764%;
+        width: auto;
+    }   
+
+    /* location search for mobile */
+    
+    #locationSearch {
+        /* location search container */
+        /* conatiner and content sizing */
+        height: 32.143%;
+        width: 100%;
+        /* container flex - stacked on top of each other */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    #locationSearch p {
+        /* form title */
+        /* title size according to figma */
+        min-height: 17px;
+        height: fit-content;
+        width: 88.8%;
+        /* title normalisation */
+        margin: 0;
+        padding: 0;
+        border: 0;
+        /* fitting font size to the figma box */
+        font-size: 15.65px;
+        font-weight: 700;
+    }
+    
+    #locationSearch fieldset {
+        /* fieldset normalisation */
+        margin: 0;
+        padding: 0;
+        width: 88.8%; 
+        /* fieldset sizes */
+        height: 10px;
+        font-size: 12.5px;
+        border-style: none;
+    }
+    
+    #locationSearch .locationSearchBar {
+        /* search bar flex properties: row + centralising */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* search bar sizes */
+        height: 58%;
+        width: 100%;
+    }
+    
+    .locationSearchBar .locationIconContainer {
+        /* container for search bar icon */
+        /* icon container border */
+        border-style: solid;
+        border-color: var(--searchbarOutline);
+        border-width: 1px;
+        /* icon container shape and colour */
+        background-color: var(--backgroundGrey);
+        border-radius: 12px 0 0 12px;
+        /* icon container sizes */
+        height: 100%;
+        width: 15.67%;
+        /* icon container flex: centralising */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .locationIconContainer i {
+        /* icon sizes */
+        font-size: 12px;
+        /* icon centralising - within i tag container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .locationSearchBar .searchInputContainer {
+        /* !!!! might need to find a better way that allows me
+        to remove this container */
+        /* search input border */
+        border-style: solid;
+        border-color: var(--searchbarOutline);
+        border-width: 1px;
+        border-radius: 12px 12px 12px 12px;
+        /* search input size */
+        height: 41%;
+        width: 88.8%;
+        /* search input container centralising */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .searchInputContainer input {
+        /* input borders */
+        border-style: none;
+        border-color: var(--searchbarOutline);
+        border-width: 1px;
+        /* input extra normalisation */
+        outline: none;
+        text-indent: 10px;
+        /* input size */
+        width: 69%;
+        height: 80%;
+    }
+    
+    .locationSearchBar .searchSubmit {
+        /* submit button border */
+        border-style: solid;
+        border-color: var(--searchbarOutline);
+        border-width: 1px;
+        /* submit button design */
+        border-radius: 12px 12px 12px 12px;
+        background-color: var(--blue);
+        /* submit button size */
+        height: 100%;
+        width: 15.67%;
+        /* centralising submit button text */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* submit button font styles */
+        font-size: 12px;
+        color: white;
+    }
+    
+    .searchMob {
+        display: none;
+    }
+    
+    .searchDesk {
+        display: inline;  
+    }
+    .fa-magnifying-glass:before, .fa-search:before {
+        display: none;
+    }
+
+    /***** search filter ******/
+
+    #searchFilter {
+        /* filter container size */
+        min-height: 65px;
+        height: auto;
+        width: 88.8%;
+        /* filter container flex properties: row + the space between */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0px 12px;
+    }
+        
+    #searchFilter .filterLegend {
+        /* filter legend text centralising */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        margin: 0 0 1% 0;
+    }
+        
+    .filterLegend p {
+        /* font size found by area made of Height x Width */
+        height: fit-content;
+        width: fit-content;
+        font-size: 100%;
+        font-weight: 700;
+    }
+        
+    #searchFilter .filterOptionContainer {
+        /* Considering there might be a lot of filters that
+        might be created by script, allow there to be space
+        to either allow them to slide or stack */
+        /* container fixed size */
+        height: fit-content;
+        width: 100%;
+        /* centralising the container contents */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 7%, 7%;
+        /* method to accomodate more possible filters */
+        flex-wrap: wrap;
+    }
+        
+    .filterOptionContainer .filterOption {
+        /* filter border + style */
+        border-style: solid;
+        border-width: 1px;
+        /* filter container shape */
+        border-color: grey;
+        border-radius: 27px;
+        display: flex;
+        flex-direction: row;
+        /* properties to allow different filter legnths */
+        min-height: 31px;
+        height: 33%;
+        width: fit-content;
+        align-items: center;
+    }
+    
+    .filterOptionContainer .filterButton {
+        font-size: 100%;
+        font-weight: 100;
+    }
+    
+    .filterOptionContainer .filterButton:nth-child(1){
+        order: 1;
+    }
+    .filterOptionContainer .filterButton:nth-child(2){
+        order: 3;
+    }
+    .filterOptionContainer .filterButton:nth-child(3){
+        order: 2;
+    }
+    
+    .filterOptionContainer .filterButton:nth-child(4){
+        order: 4;
+    }
+    
+    #searchResultQuant {
+        /* setting the size of the search results container */
+        /* container sizes */
+        height: 50px;
+        width: 260px;
+        /* flex options for container */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+    
+    #searchResultQuant .infoIcon {
+        /* setting the size of the info bar */
+        /* highlighting container for page placement */
+        border-color: gray;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 90px;
+        /* size of the icon */
+        height: 43%;
+        width: 8%;
+        /* flex options for container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* icon size */
+        font-size: 10px;
+        color: var(--blue);
+    }
+    
+    #searchResultQuant p {
+        /* setting the size of the info bar */
+        /* size of the icon */
+        height: fit-content;
+        width: 91%;
+        /* font for search results */
+        font-size: 11px;
+    }
+        
+}

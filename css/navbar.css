@@ -1,0 +1,104 @@
+/* desktop styles */
+
+/* whole navbar styles */
+
+#navBar {
+    /* navbar content split */
+    display: flex;
+    justify-content: space-between;
+    /* navbar overall size */
+    min-height: 75px;
+    height: 25.25%;
+    width: 100%;
+    /* navbar extra normalisation*/
+    margin: 0;
+    padding: 0;
+}
+
+/* booki logo styles */
+
+#bookieLogo {
+    /* logo container/anchor that leads back to home page 
+    on functional website*/
+    /* logo extra normalisation */
+    border-width: 1px;
+    /* logo photo centralisation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* logo image sizes for desktop */
+    min-width: 60px;
+    width: 6.5%;
+    /* navbar extra normalisation*/
+    margin: 0;
+    padding: 0;
+}
+
+#bookieLogo img {
+    width: 100%;
+    height: auto;
+    /* navbar extra normalisation*/
+    margin: 0;
+    padding: 0;
+}
+
+/* booki navigation link styles */
+
+#navBar ul {
+    /* navigation links for website. used as container */
+    /* navigation list flex styles; row + centralised */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* navigation list extra normalisation */
+    margin: 0;
+    padding: 0;
+    /* navigation list sizes */
+    height: auto;
+    width: fit-content;
+}
+
+#navBar ul li {
+    /* individual navigation boxes for links */
+    /* navigation link container sizes  */
+    min-width: 112px;
+    width: 12.1%;
+    height: 98%;
+    /* nav link flex; centralising the words */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* nav link extra normalisation */
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#navBar ul li a {
+    /* made the anchor same size as the whole list item.
+    allows the the whole inside of nav link to be
+    interractive */
+    /* anchor sizes */
+    height: 100%;
+    width: 100%;
+    /* anchor extra normalisation */
+    text-decoration: none;
+    text-align: center;
+    font-size: 11.25px;
+    font-weight: 400;
+    color: black;
+    /* pushing the items even more central */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar ul li a:hover {
+    /* adding blue line above for desktop */
+    color: var(--blue);
+    border-style: solid;
+    border-width: 1px 0 0 0;
+}
+
+
+
+
