@@ -582,4 +582,111 @@
         margin-top: 10.88px;
     }
 
+    /* activities */
+
+    #activitiesResults {
+        /* styles for the section */
+        /* adding heights for container */
+        /* h = 50px + 317px + 47px = 414px */
+        min-height: 414px;
+        height: 30%;
+        max-height: 1192.32px;
+        min-width: 100%;
+        width: 92.86%;
+        max-width: 1872px;
+    }
+
+    #activitiesResults .activitiesContainer {
+        /* container for the activities container */
+        /* flex properties */
+        align-items: center;
+        justify-content: space-between;
+        min-height: 350px;
+        height: 350px;
+        min-width: 650px;
+        width: 88%;
+        max-width: 1872px;
+        flex-wrap: wrap;
+    }
+
+    #activitiesResults .activitiesContainer .activities .activityPhoto {
+        /* container for the activities photo container */
+        /* default sizes for the photo container */
+        height: 70.26%;
+        width: 100%;
+        /* setting flex properties to center images */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* making sure the full image fits without falling out of the container */
+        overflow: hidden;
+    }
+
+    #activitiesResults .activitiesContainer .activities:nth-child(1) {
+        /* sizes for the default container */
+        min-height: 131.94px;
+        height: 43.98%;
+        max-height: 379.9872px;
+        min-width: 200px;
+        width: 30.77%;
+        max-width: 576px;
+    }
+    
+    #activitiesResults .activitiesContainer .activities:nth-child(2) {
+        /* sizes for the default container */
+        min-height: 131.94px;
+        height: 43.98%;
+        max-height: 379.9872px;
+        min-width: 200px;
+        width: 30.77%;
+        max-width: 576px;
+    }
+    
+    #activitiesResults .activitiesContainer .activities:nth-child(3) {
+        /* sizes for the default container */
+        min-height: 131.94px;
+        height: 43.98%;
+        max-height: 379.9872px;
+        min-width: 200px;
+        width: 30.77%;
+        max-width: 576px;
+    }
+    
+    #activitiesResults .activitiesContainer .activities:nth-child(4) {
+        /* sizes for the default container */
+        min-height: 131.94px;
+        height: 43.98%;
+        max-height: 379.9872px;
+        min-width: 200px;
+        width: 30.77%;
+        max-width: 576px;
+    }
+    
+    #activitiesResults .activitiesContainer .activities:nth-child(5) {
+        /* sizes for the default container */
+        min-height: 131.94px;
+        height: 43.98%;
+        max-height: 379.9872px;
+        min-width: 200px;
+        width: 30.77%;
+        max-width: 576px;
+    }
+    
+    #activitiesResults .activitiesContainer .activities:nth-child(6) {
+        /* sizes for the default container */
+        min-height: 131.94px;
+        height: 43.98%;
+        max-height: 379.9872px;
+        min-width: 200px;
+        width: 30.77%;
+        max-width: 576px;
+    }
+
+    #activitiesResults .activitiesContainer .activities .articleText {
+        /* container for the activities text container */
+        /* text box size */
+        height: 29.32%;
+        width: 90%;
+    }
+
 }
