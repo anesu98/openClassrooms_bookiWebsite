@@ -767,6 +767,54 @@
         height: 48%;
         width: 22.57%;
     }
+
+    /* footer */
+
+    .footerContainer {
+        /* Should always be as long as page so background can
+        be greyed out. Should allow footer to be in line with
+        .mainContContainer */
+    
+        /* setting the sizes for conatiner */
+        width: 100%;
+        height: fit-content; /* should be 10% */
+        margin-top: 20px;
+        /* centralising properties for container */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background */
+        background-color: var(--backgroundGrey);
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* setting the sizes for conatiner */
+        width: 92.6%;
+        gap: 26.7px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    
+    
+    
+    footer .footerLinksContainer {
+        /* sizes for that container */
+        height: fit-content;
+        width: 33%;
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* extra normalisastion */
+        padding: 0;
+        margin: 0;
+    }
 }
 
 

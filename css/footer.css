@@ -1,0 +1,75 @@
+
+.footerContainer {
+    /* Should always be as long as page so background can
+    be greyed out. Should allow footer to be in line with
+    .mainContContainer */
+
+    /* setting the sizes for conatiner */
+    width: 100%;
+    height: fit-content; /* should be 10% */
+    margin-top: 20px;
+    /* centralising properties for container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background */
+    background-color: var(--backgroundGrey);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    /* setting the sizes for conatiner */
+    width: 92.6%;
+}
+
+
+
+footer .footerLinksContainer {
+    /* sizes for that container */
+    height: 142px;
+    width: 33.7%;
+    /* flex properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* extra normalisastion */
+    padding: 0;
+    margin: 0;
+
+}
+
+footer h2 {
+    /* extra normalisastion */
+    padding: 0;
+    margin: 0 0 15px 0;
+    /* font attributes */
+    text-align: center;
+    font-size: 12px;
+}
+
+footer ul {
+    /* more normalising */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    /* extra normalisastion */
+    margin: 0 0 6px 0;
+    padding: 0;
+    /* font attributes */
+    text-align: start;
+    font-size: 11px;
+    text-decoration: none;
+
+}
+
+footer ul a {
+    /* font attributes */
+    text-decoration: none;
+    color: black;
+}

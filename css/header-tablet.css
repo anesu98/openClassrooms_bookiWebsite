@@ -588,9 +588,7 @@
         /* styles for the section */
         /* adding heights for container */
         /* h = 50px + 317px + 47px = 414px */
-        min-height: 414px;
         height: 30%;
-        max-height: 1192.32px;
         min-width: 100%;
         width: 92.86%;
         max-width: 1872px;
@@ -612,7 +610,7 @@
     #activitiesResults .activitiesContainer .activities .activityPhoto {
         /* container for the activities photo container */
         /* default sizes for the photo container */
-        height: 70.26%;
+        height: 92%;
         width: 100%;
         /* setting flex properties to center images */
         display: flex;
@@ -624,69 +622,93 @@
 
     #activitiesResults .activitiesContainer .activities:nth-child(1) {
         /* sizes for the default container */
-        min-height: 131.94px;
-        height: 43.98%;
-        max-height: 379.9872px;
-        min-width: 200px;
-        width: 30.77%;
-        max-width: 576px;
+        height: 99.36%;
+        width: 22.57%;
     }
     
     #activitiesResults .activitiesContainer .activities:nth-child(2) {
         /* sizes for the default container */
-        min-height: 131.94px;
-        height: 43.98%;
-        max-height: 379.9872px;
-        min-width: 200px;
-        width: 30.77%;
-        max-width: 576px;
+        height: 53.6%;
+        width: 22.57%;
     }
     
     #activitiesResults .activitiesContainer .activities:nth-child(3) {
         /* sizes for the default container */
-        min-height: 131.94px;
-        height: 43.98%;
-        max-height: 379.9872px;
-        min-width: 200px;
-        width: 30.77%;
-        max-width: 576px;
+        height: 36.9%;
+        width: 22.57%;
     }
     
     #activitiesResults .activitiesContainer .activities:nth-child(4) {
         /* sizes for the default container */
-        min-height: 131.94px;
-        height: 43.98%;
-        max-height: 379.9872px;
-        min-width: 200px;
-        width: 30.77%;
-        max-width: 576px;
+        height: 99.36%;
+        width: 22.57%;
     }
     
     #activitiesResults .activitiesContainer .activities:nth-child(5) {
         /* sizes for the default container */
-        min-height: 131.94px;
-        height: 43.98%;
-        max-height: 379.9872px;
-        min-width: 200px;
-        width: 30.77%;
-        max-width: 576px;
+        height: 44%;
+        width: 22.57%;
     }
     
     #activitiesResults .activitiesContainer .activities:nth-child(6) {
         /* sizes for the default container */
-        min-height: 131.94px;
-        height: 43.98%;
-        max-height: 379.9872px;
-        min-width: 200px;
-        width: 30.77%;
-        max-width: 576px;
+        height: 48%;
+        width: 22.57%;
     }
 
     #activitiesResults .activitiesContainer .activities .articleText {
         /* container for the activities text container */
         /* text box size */
-        height: 29.32%;
+        height: auto;
         width: 90%;
+    }
+
+    /* footer */
+
+    .footerContainer {
+        /* Should always be as long as page so background can
+        be greyed out. Should allow footer to be in line with
+        .mainContContainer */
+    
+        /* setting the sizes for conatiner */
+        width: 100%;
+        height: fit-content; /* should be 10% */
+        margin-top: 20px;
+        /* centralising properties for container */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background */
+        background-color: var(--backgroundGrey);
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* setting the sizes for conatiner */
+        width: 88%;
+        gap: 26.7px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    
+    
+    
+    footer .footerLinksContainer {
+        /* sizes for that container */
+        height: fit-content;
+        width: 33%;
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* extra normalisastion */
+        padding: 0;
+        margin: 0;
     }
 
 }

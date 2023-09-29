@@ -318,7 +318,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: start;
-        gap: 7%, 7%;
+        gap: 7%;
         /* method to accomodate more possible filters */
         flex-wrap: wrap;
     }
@@ -615,7 +615,7 @@
         border-radius: 10px;
         /* sizes for the default container */
         height: 139.58px;
-        width: 100;
+        width: 100%;
         /* flex properties */
         display: flex;
         flex-direction: column;
@@ -680,5 +680,51 @@
         /* text box size */
         height: 40px;
         width: 88%;
+    }
+
+    /* footer */
+
+    .footerContainer {
+        /* Should always be as long as page so background can
+        be greyed out. Should allow footer to be in line with
+        .mainContContainer */
+    
+        /* setting the sizes for conatiner */
+        width: 100%;
+        height: fit-content; /* should be 10% */
+        margin-top: 20px;
+        /* centralising properties for container */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background */
+        background-color: var(--backgroundGrey);
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        /* setting the sizes for conatiner */
+        width: 88%;
+        gap: 26.7px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    
+    
+    
+    footer .footerLinksContainer {
+        /* sizes for that container */
+        height: fit-content;
+        width: 100%;
+        /* flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* extra normalisastion */
+        padding: 0;
+        margin: 0;
     }
 }
