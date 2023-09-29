@@ -39,6 +39,8 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        min-height: fit-content;
+        height: fit-content;
     }
 
     /* navbar styles */
@@ -345,116 +347,317 @@
     
     }
     
-.filterButton {
-    /* container for new options*/
-    /* filter border + style */
-    border-style: solid;
-    border-width: 1px;
-    /* filter container shape */
-    border-color: var(--backgroundGrey);
-    border-radius: 27px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    /* properties to allow different filter legnths */
-    height: 34px;
-    width: fit-content;
-    align-items: center;
-    /* space between words and edge */
-    padding: 0 13px 0 0;
-    /* font size + colour*/
-    font-size: 13px;
-    font-weight: 600;
-    background-color: white;
-}
+    .filterButton {
+        /* container for new options*/
+        /* filter border + style */
+        border-style: solid;
+        border-width: 1px;
+        /* filter container shape */
+        border-color: var(--backgroundGrey);
+        border-radius: 27px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        /* properties to allow different filter legnths */
+        height: 34px;
+        width: fit-content;
+        align-items: center;
+        /* space between words and edge */
+        padding: 0 13px 0 0;
+        /* font size + colour*/
+        font-size: 13px;
+        font-weight: 600;
+        background-color: white;
+    }
 
-.filterOptionContainer .filterButton {
-    font-size: 11px;
-    font-weight: 100;
-}
+        .filterOptionContainer .filterButton {
+        font-size: 11px;
+        font-weight: 100;
+    }
 
-.filterIcon {
-    border-color: var(--backgroundGrey);
-    border-style: solid;
-    border-width: 1px;
-    /* centralising the icon */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* icon shape */
-    height: 35px;
-    width: 35px;
-    border-radius: 26px;
-    /* space between icon and text */
-    margin: 0 10px 0 0;
-    /* icon size + colour */
-    font-size: 13px;
-    color: var(--blue);
-    background-color: var(--lighterBlue);
+    .filterIcon {
+        border-color: var(--backgroundGrey);
+        border-style: solid;
+        border-width: 1px;
+        /* centralising the icon */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* icon shape */
+        height: 35px;
+        width: 35px;
+        border-radius: 26px;
+        /* space between icon and text */
+        margin: 0 10px 0 0;
+        /* icon size + colour */
+        font-size: 13px;
+        color: var(--blue);
+        background-color: var(--lighterBlue);
+    }
 
-    /* why is the icon jumping out of place when page is refreshed? */
-}
+    .filterButton:hover {
+        /* not specified in brief, so just a reminder for 
+        demonstration */
+        background-color: var(--backgroundGrey);
+    }
 
-.filterButton:hover {
-    /* not specified in brief, so just a reminder for 
-    demonstration */
-    background-color: var(--backgroundGrey);
-}
+    #searchResultQuant {
+        /* setting the size of the search results container */
+        /* container sizes */
+        height: 50px;
+        /* flex options for container */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 6px;
+    }
 
-#searchResultQuant {
-    /* setting the size of the search results container */
-    /* container sizes */
-    height: 50px;
-    /* flex options for container */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 6px;
-}
+    #searchResultQuant .infoIcon {
+        /* setting the size of the info bar */
+        /* highlighting container for page placement */
+        border-color: gray;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 90px;
+        /* size of the icon */
+        height: 17px;
+        width: 17px;
+        /* flex options for container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* icon size */
+        font-size: 10px;
+        color: var(--blue);
+    }
 
-#searchResultQuant .infoIcon {
-    /* setting the size of the info bar */
-    /* highlighting container for page placement */
-    border-color: gray;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 90px;
-    /* size of the icon */
-    height: 17px;
-    width: 17px;
-    /* flex options for container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* icon size */
-    font-size: 10px;
-    color: var(--blue);
-}
+    #searchResultQuant p {
+        /* setting the size of the info bar */
+        /* size of the icon */
+        height: 35px;
+        width: 274px;
+        /* font for search results */
+        font-size: 11px;
+    }
 
-#searchResultQuant p {
-    /* setting the size of the info bar */
-    /* size of the icon */
-    height: 35px;
-    width: 274px;
-    /* font for search results */
-    font-size: 11px;
-}
+    .filterOptionContainer .filterButton:nth-child(1){
+        order: 1;
+    }
+    .filterOptionContainer .filterButton:nth-child(2){
+        order: 2;
+    }
+    .filterOptionContainer .filterButton:nth-child(3){
+        order: 3;
+    }
 
-.filterOptionContainer .filterButton:nth-child(1){
-    order: 1;
-}
-.filterOptionContainer .filterButton:nth-child(2){
-    order: 2;
-}
-.filterOptionContainer .filterButton:nth-child(3){
-    order: 3;
-}
+    .filterOptionContainer .filterButton:nth-child(4){
+        order: 4;
+    }
+    
+    /* main + aside */
 
-.filterOptionContainer .filterButton:nth-child(4){
-    order: 4;
-}
-        
+    .mainArticleContainer .accomMostPopular {
+        /* setting the flex properties */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* container sizes */
+        height: 459px;
+        /* jj */
+        border-color: teal;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    /* accomodations */
+
+    .accomMostPopular #accomodationResults {
+        /* setting the accomodation first 6 results */
+        /* container sizes */
+        height: 435px;
+        width: 65.87%; /* 610px */
+        /* setting the flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* container colour */
+        background-color: var(--backgroundGrey);
+        border-radius: 10px;
+    }
+
+    #accomodationResults .legendContainer {
+        /* controlling the container for the legend */
+        /* setting up size properties for the container */
+        height: 36px;
+        width: 554px;
+    }
+
+    #accomodationResults .accomArticleContainer {
+        /* controlling the container holding all accomodation articles */
+        /* flex options for this container */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 21px;
+        /* setting up size properties for the container */
+        height: 322px;
+    }
+
+    .accomArticleContainer .accomodations {
+        /* controlling the container for individual accomodation articles */
+        /* setting the border template for the container */
+        border-color: var(--defaultStar);
+        border-style: solid;
+        border-width: 1px;
+        /* size properties for accom article */
+        height: 137px;
+        width: 171px;
+        /* flex properties to centralise accom article */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border properies for accom article */
+        border-radius: 15px;
+        /* container colour */
+        background-color: var(--backgroundWhite);
+        box-shadow: black 10px;
+    }
+
+    .accomArticleContainer .accomodations .accomPhoto {
+        /* controlling the photos for individual accomodation articles */
+        /* setting size */
+        height: 80px;
+        width: 163px;
+        /* setting flex properties to center images */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* making sure the full image fits without falling out of the container */
+        overflow: hidden;
+        /* border properies for accom article */
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .accomArticleContainer .accomodations .articleText {
+        /* controlling the text container of the article */
+        /* setting size properties */
+        height: 50px;
+        width: 145px;
+        /* setting flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2px;
+        /* extra normalisation */
+        padding: 0;
+        margin: 0;
+    
+    }
+
+    #accomodationResults .showCont {
+        /* controlling the 'show more' container */
+        /* flex options for this container */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        /* setting up size properties for the container */
+        height: 30px;
+        width: 554px;
+    }
+
+    /* Most Popular */
+
+    .accomMostPopular #mostPopularResults {
+        /* setting the accomodation first 6 results */
+        /* container sizes */
+        height: 435px;
+        width: 31.2%; /* 289px */
+        /* setting the flex properties */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* container colour */
+        background-color: var(--backgroundGrey);
+        border-radius: 10px;
+    }
+
+    #mostPopularResults .legendContainer {
+        /* properties for 'most popular' legend */
+        /* setting the flex properties */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* container sizes */
+        height: 34px;
+        width: 83%;
+    }
+
+    #mostPopularResults .mostPopularArticleContainer {
+        width: 83%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 13px;
+        flex-wrap: wrap;
+    }
+
+    #mostPopularResults .mostPopular {
+        /* properties for most popular articles */
+        /* setting the border template for the container */
+        border-color: var(--defaultStar);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        /* container sizes */
+        height: 100px;
+        width: 100%; /* 240px */
+        /* setting flex properties to center images */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        /* container background */
+        background-color: var(--backgroundWhite);
+    }
+
+    #mostPopularResults .mostPopular .accomPhoto {
+        /* properties for article photos */
+        /* setting the border template for the container */
+        border-color: var(--defaultStar);
+        border-style: solid;
+        border-width: 1px;
+        /* setting size */
+        height: 93px;
+        width: 36%;
+        /* setting flex properties to center images */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* making sure the full image fits without falling out of the container */
+        overflow: hidden;
+        /* border properies for accom article */
+        border-radius: 10px 0 0 10px;
+    }
+
+    #mostPopularResults .mostPopular .articleText {
+        /* properties for article text box */
+        /* setting size */
+        height: 93px;
+        width: 57%;
+    }
 }
 

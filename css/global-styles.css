@@ -8,6 +8,16 @@ header {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /**/
+    border-color: blue;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.mainArticleContainer {
+    /* setting the flex properties */
+    display: flex;
+    flex-direction: column;
 }
 
 
