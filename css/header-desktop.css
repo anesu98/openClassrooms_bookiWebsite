@@ -11,6 +11,7 @@
         font-family: 'Raleway', sans-serif;
         width: 100%;
         min-height: 1318.75px;
+        height: 1318.75px;
         /**/
         display: flex;
         flex-direction: column;
@@ -39,7 +40,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        min-height: fit-content;
+        min-height: 296.180555555555556px;
         height: fit-content;
     }
 
@@ -54,7 +55,7 @@
         justify-content: space-between;
         /* navbar overall size */
         min-height: 75px;
-        height: 5.69%;
+        height: 74px;
         width: 100%;
         /* navbar extra normalisation*/
         margin: 0;
@@ -777,7 +778,7 @@
     
         /* setting the sizes for conatiner */
         width: 100%;
-        height: fit-content; /* should be 10% */
+        height: 20%; /* should be 10% */
         margin-top: 20px;
         /* centralising properties for container */
         display: flex;

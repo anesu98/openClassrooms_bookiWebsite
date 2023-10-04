@@ -294,7 +294,7 @@
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height: fit-content;
+        height: 20%;
         margin: 0 0 1% 0;
     }
     
@@ -311,7 +311,7 @@
         might be created by script, allow there to be space
         to either allow them to slide or stack */
         /* container fixed size */
-        height: fit-content;
+        height: 80%;
         width: 100%;
         /* centralising the container contents */
         display: flex;
@@ -362,7 +362,7 @@
         /* setting the size of the search results container */
         /* container sizes */
         height: 50px;
-        width: 260px;
+        width: 88%;
         /* flex options for container */
         display: flex;
         flex-direction: row;
@@ -379,8 +379,8 @@
         border-width: 1px;
         border-radius: 90px;
         /* size of the icon */
-        height: 43%;
-        width: 8%;
+        height: 20px;
+        width: 20px;
         /* flex options for container */
         display: flex;
         justify-content: center;
