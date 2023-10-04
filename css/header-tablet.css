@@ -467,7 +467,7 @@
     #mostPopularResults .mostPopular {
         /* properties for most popular articles */
         /* setting the border template for the container */
-        border-color: var(--defaultStar);
+        border-color: var(--backgroundGrey);
         border-style: solid;
         border-width: 1px;
         border-radius: 10px;
@@ -481,12 +481,13 @@
         align-items: center;
         /* container background */
         background-color: var(--backgroundWhite);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
     
     #mostPopularResults .mostPopular .accomPhoto {
         /* properties for article photos */
         /* setting the border template for the container */
-        border-color: var(--defaultStar);
+        border-color: var(--backgroundGrey);
         border-style: solid;
         border-width: 1px;
         /* setting size */
@@ -506,7 +507,7 @@
         /* properties for article text box */
         /* setting size */
         height: 81.25px;
-        width: 54.32%;
+        width: 55%;
         /* flex properties */
         display: flex;
         flex-direction: column;
@@ -550,9 +551,10 @@
     .accomArticleContainer .accomodations {
         /* controlling the container for individual accomodation articles */
         /* setting the border template for the container */
-        border-color: var(--defaultStar);
+        border-color: var(--backgroundGrey);
         border-style: solid;
         border-width: 1px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         /* size properties for accom article */
         height: 138.8px;
         width: 48%;
@@ -605,6 +607,11 @@
         width: 88%;
         max-width: 1872px;
         flex-wrap: wrap;
+        border-color: var(--backgroundGrey);
+    }
+
+    #activitiesResults .activitiesContainer .activities {
+        border-color: var(--backgroundGrey);
     }
 
     #activitiesResults .activitiesContainer .activities .activityPhoto {

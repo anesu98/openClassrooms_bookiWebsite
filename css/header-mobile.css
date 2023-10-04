@@ -465,10 +465,11 @@
     #mostPopularResults .mostPopular {
         /* properties for most popular articles */
         /* setting the border template for the container */
-        border-color: var(--defaultStar);
+        border-color: var(--backgroundGrey);
         border-style: solid;
         border-width: 1px;
         border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         /* container sizes */
         height: 100px;
         width: 88%;
@@ -543,9 +544,10 @@
     .accomArticleContainer .accomodations {
         /* controlling the container for individual accomodation articles */
         /* setting the border template for the container */
-        border-color: var(--defaultStar);
+        border-color: var(--backgroundGrey);
         border-style: solid;
         border-width: 1px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         /* size properties for accom article */
         height: 138.8px;
         width: 100%;
@@ -609,10 +611,11 @@
     #activitiesResults .activitiesContainer .activities {
         /* container for the activities container */
         /* contruction border for section */
-        border-color: var(--defaultStar);
+        border-color: var(--backgroundGrey);
         border-width: 1px;
         border-style: solid;
         border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         /* sizes for the default container */
         height: 139.58px;
         width: 100%;

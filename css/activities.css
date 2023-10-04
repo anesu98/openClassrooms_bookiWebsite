@@ -41,10 +41,11 @@
 #activitiesResults .activitiesContainer .activities {
     /* container for the activities container */
     /* contruction border for section */
-    border-color: var(--defaultStar);
+    border-color: var(--backgroundGrey);
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     /* sizes for the default container */
     height: 137px;
     width: 209px;

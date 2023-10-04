@@ -510,7 +510,7 @@
     .accomArticleContainer .accomodations {
         /* controlling the container for individual accomodation articles */
         /* setting the border template for the container */
-        border-color: var(--defaultStar);
+        border-color: var(--backgroundGrey);
         border-style: solid;
         border-width: 1px;
         /* size properties for accom article */
@@ -526,7 +526,7 @@
         border-radius: 15px;
         /* container colour */
         background-color: var(--backgroundWhite);
-        box-shadow: black 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
     .accomArticleContainer .accomodations .accomPhoto {
@@ -617,7 +617,7 @@
     #mostPopularResults .mostPopular {
         /* properties for most popular articles */
         /* setting the border template for the container */
-        border-color: var(--defaultStar);
+        border-color: var(--backgroundGrey);
         border-style: solid;
         border-width: 1px;
         border-radius: 10px;
@@ -628,9 +628,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 5px;
+        gap: 4.5%;
         /* container background */
         background-color: var(--backgroundWhite);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
     #mostPopularResults .mostPopular .accomPhoto {
@@ -697,7 +698,7 @@
     #activitiesResults .activitiesContainer .activities {
         /* container for the activities container */
         /* contruction border for section */
-        border-color: var(--defaultStar);
+        border-color: var(--backgroundGrey);
         border-width: 1px;
         border-style: solid;
         border-radius: 10px;
