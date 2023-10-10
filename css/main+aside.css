@@ -73,7 +73,7 @@
     align-items: center;
     /* setting up size properties for the container */
     height: 14px;
-    width: 69x;
+    width: 69px;
     /* font properties */
     font-size: 11.75px;
     color: black;
@@ -100,7 +100,6 @@
     border-radius: 15px;
     /* container colour */
     background-color: var(--backgroundWhite);
-    box-shadow: black 10px;
 }
 
 
@@ -140,7 +139,6 @@
     /* making sure that the photo fits the container and doesn't lose quality */
     object-fit: contain;
     max-width: 100%;
-    max-height: auto;  
 }
 
 .accomArticleContainer .accomodations .accomodationName {
