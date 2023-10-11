@@ -102,6 +102,11 @@
     background-color: var(--backgroundWhite);
 }
 
+.accomArticleContainer .accomodations:hover {
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
+}
+
 
 .accomArticleContainer .accomodations .accomPhoto {
     /* controlling the photos for individual accomodation articles */
@@ -245,6 +250,11 @@
     gap: 5px;
     /* container background */
     background-color: var(--backgroundWhite);
+}
+
+#mostPopularResults .mostPopular:hover {
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
 }
 
 #mostPopularResults .mostPopular .accomPhoto {
