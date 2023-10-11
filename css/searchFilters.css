@@ -111,6 +111,7 @@
     /* not specified in brief, so just a reminder for 
     demonstration */
     background-color: var(--backgroundGrey);
+    cursor: pointer;
 }
 
 #searchResultQuant {
