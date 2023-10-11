@@ -473,7 +473,7 @@
         /* container sizes */
         height: 100px;
         width: 88%;
-        gap: 5.5%;
+        gap: 6.2%;
         /* setting flex properties to center images */
         display: flex;
         justify-content: center;
@@ -560,6 +560,11 @@
         width: 98%;
         /* border properies for accom article */
         border-radius: 15px 15px 0 0;
+    }
+
+    .accomArticleContainer .accomodations .accomPhoto img {
+        object-fit: cover;
+        min-width: 100%;
     }
 
     .accomArticleContainer .accomodations .articleText {
